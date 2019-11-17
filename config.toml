@@ -1,3 +1,12 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "/"
+title = "Levent Bekdemir"
+theme = "hyde"
+
+[Menus]
+  main = [
+      {Name = "Github", URL = "https://github.com/lvntbkdmr/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/levent-bekdemir-78b94344/"}
+  ]
+
+[params]
+  description = "I used to be an adventurer like you.."
