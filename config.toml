@@ -5,7 +5,7 @@ theme = "hyde"
 [Menus]
   main = [
       {Name = "Github", URL = "https://github.com/lvntbkdmr/"},
-      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/levent-bekdemir-78b94344/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/leventbekdemir/"},
       {Name = "HackerRank", URL = "https://www.hackerrank.com/lvntbkdmr/"}
   ]
 
