@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: 2019-11-17T15:42:40+03:00
-draft: true
+draft: false
 ---
 
 Hello all,
