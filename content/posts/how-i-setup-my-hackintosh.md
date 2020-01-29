@@ -4,13 +4,13 @@ date = 2020-01-29T09:19:00Z
 title = "How I Setup my Hackintosh !"
 
 +++
-\# My Hackintosh Journey !
+# My Hackintosh Journey !
 
 A hackintosh journey of me in order to join the elegant "just working" environment of Apple by a more budget-friendly way.
 
-The term "hackintosh" has been around since Apple has switched from PowerPC to Intel architecture around 2005. Ever since then, hackers try to integrate macOS/OS X software to be run on custom made platforms. There is a huge community behind this struggle such as \[tonymacx86\]([https://www.tonymacx86.com/](https://www.tonymacx86.com/ "https://www.tonymacx86.com/")), \[insanelymac\]([https://www.insanelymac.com/](https://www.insanelymac.com/ "https://www.insanelymac.com/")) and of course \[/r/hackintosh\]([https://www.reddit.com/r/hackintosh/](https://www.reddit.com/r/hackintosh/ "https://www.reddit.com/r/hackintosh/")) sub-reddit. Personally, I'm not an active contributor of any of these communities. Therefore, my experience and insights about this topic are very limited. More historic info can be found in \[here\]([https://en.wikipedia.org/wiki/Hackintosh?oldformat=true](https://en.wikipedia.org/wiki/Hackintosh?oldformat=true "https://en.wikipedia.org/wiki/Hackintosh?oldformat=true")). 
+The term "hackintosh" has been around since Apple has switched from PowerPC to Intel architecture around 2005. Ever since then, hackers try to integrate macOS/OS X software to be run on custom made platforms. There is a huge community behind this struggle such as [tonymacx86](https://www.tonymacx86.com/), [insanelymac](https://www.insanelymac.com/) and of course [/r/hackintosh](https://www.reddit.com/r/hackintosh/) sub-reddit. Personally, I'm not an active contributor of any of these communities. Therefore, my experience and insights about this topic are very limited. More historic info can be found in [here](https://en.wikipedia.org/wiki/Hackintosh?oldformat=true). 
 
-!\[My%20Hackintosh%20Journey/Steve_Jobs_Presentation_2.jpg\](My%20Hackintosh%20Journey/Steve_Jobs_Presentation_2.jpg)
+![My%20Hackintosh%20Journey/Steve_Jobs_Presentation_2.jpg](My%20Hackintosh%20Journey/Steve_Jobs_Presentation_2.jpg)
 
 Mac OS X running on Pentium 4
 
@@ -52,4 +52,4 @@ From my perspective, hackintosh = community
 
 I wanted my OSX to run as bare as possible without touching or modifying anything inside the OS. However, my journey thought me that I needed to get my hands dirty no matter how "compatible" I chose my parts are. As I mentioned earlier, my main and only source was tonymacx86.
 
-Firstly, I started with this topic -> \[[https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/](https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/ "https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/")\]([https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/](https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/ "https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/"))
+Firstly, I started with this topic -> [https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/](https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/)
