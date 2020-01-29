@@ -28,3 +28,5 @@ fields:
       format: markdown
   label: Content
   description: Text content goes here
+pages:
+- content/posts/how-i-setup-my-hackintosh.md
