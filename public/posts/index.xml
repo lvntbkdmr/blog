@@ -5,10 +5,20 @@
     <link>/posts/</link>
     <description>Recent content in Posts on Levent Bekdemir</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 17 Nov 2019 15:42:40 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2020 09:19:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How I Setup my Hackintosh !</title>
+      <link>/posts/how-i-setup-my-hackintosh/</link>
+      <pubDate>Wed, 29 Jan 2020 09:19:00 +0000</pubDate>
+      
+      <guid>/posts/how-i-setup-my-hackintosh/</guid>
+      <description>My Hackintosh Journey ! A hackintosh journey of me in order to join the elegant &amp;ldquo;just working&amp;rdquo; environment of Apple by a more budget-friendly way.
+The term &amp;ldquo;hackintosh&amp;rdquo; has been around since Apple has switched from PowerPC to Intel architecture around 2005. Ever since then, hackers try to integrate macOS/OS X software to be run on custom made platforms. There is a huge community behind this struggle such as tonymacx86, insanelymac and of course /r/hackintosh sub-reddit.</description>
+    </item>
     
     <item>
       <title>Hello World</title>
