@@ -55,3 +55,5 @@ From my perspective, hackintosh = community
 I wanted my OSX to run as bare as possible without touching or modifying anything inside the OS. However, my journey thought me that I needed to get my hands dirty no matter how "compatible" I chose my parts are. As I mentioned earlier, my main and only source was tonymacx86.
 
 Firstly, I started with this topic -> [https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/](https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/)
+
+This is trial add.
