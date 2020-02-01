@@ -6,6 +6,8 @@ title = "How I Setup my Hackintosh !"
 +++
 # My Hackintosh Journey !
 
+![Hackintosh Image](/img/photo-1517059224940-d4af9eec41b7.jpeg)
+
 A hackintosh journey of me in order to join the elegant "just working" environment of Apple by a more budget-friendly way.
 
 The term "hackintosh" has been around since Apple has switched from PowerPC to Intel architecture around 2005. Ever since then, hackers try to integrate macOS/OS X software to be run on custom made platforms. There is a huge community behind this struggle such as [tonymacx86](https://www.tonymacx86.com/), [insanelymac](https://www.insanelymac.com/) and of course [/r/hackintosh](https://www.reddit.com/r/hackintosh/) sub-reddit. Personally, I'm not an active contributor of any of these communities. Therefore, my experience and insights about this topic are very limited. More historic info can be found in [here](https://en.wikipedia.org/wiki/Hackintosh?oldformat=true). 
