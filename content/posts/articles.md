@@ -1,6 +1,6 @@
 ---
 title: "Articles"
-date: 2020-02-01 07:50:00 &#43;0000 UTC
+date: 01 Feb 20 07:50 UTC
 draft: false
 ---
 

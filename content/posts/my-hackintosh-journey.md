@@ -1,6 +1,6 @@
 ---
 title: "My Hackintosh Journey !"
-date: 2020-01-29 13:15:55 &#43;0000 UTC
+date: 29 Jan 20 13:15 UTC
 draft: false
 ---
 

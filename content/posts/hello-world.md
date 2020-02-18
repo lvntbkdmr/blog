@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-date: 2020-02-17 11:19:14 &#43;0000 UTC
+date: 17 Feb 20 11:19 UTC
 draft: false
 ---
 
