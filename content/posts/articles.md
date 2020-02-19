@@ -6,4 +6,3 @@ draft: false
 
 [/posts/hello-world](Hello World)
 [/posts/my-hackintosh-journey](My Hackintosh Journey !)
-[/posts/deneme-content](Deneme Content)
