@@ -28,21 +28,7 @@ Years passed and finally I had both money and time to invest on to a custom-buil
 
 Some of the parts that I chose are given below:
 
-Case : Thermaltake Core V1 Snow Edition 
-
-Fans : 2x Arctic F8 PWM
-
-PSU : Seasonic X-850 80Plus GOLD 850W
-
-Motherboard : Asrock Z370M-ITX/ac
-
-CPU : Intel Core i7 8700K
-
-RAM : 1x Corsair Vengeance LPX 16GB 3000MHz DDR4
-
-CPU Cooler : Noctua NH-C14S
-
-Wifi/BT Card : BCM94360CS2 with BCM943224PCIEBT2 NGFF↔M2 Adapter
+RendeRenderCollectionViewrCode NYI
 
 The most distinguishing parts are Motherboard, CPU and GPU for a hackintosh build. Of course, wifi/bt cards or dongles are also important to be compatible.
 
