@@ -35,13 +35,15 @@ Download latest source files from [http://ftp.gnu.org/gnu/gdb/](http://ftp.gnu.o
 
 Extract compressed **.tar** file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)
 
-    mkdir devenv/gdb-9.1
-    cd into your temporary gdb source folder
-    mkdir build
-    cd build
-    ../configure --prefix=/home/devenv/gdb-9.1
-    make -j4
-    make install
+{{< highlight shell >}}
+mkdir devenv/gdb-9.1
+cd into your temporary gdb source folder
+mkdir build
+cd build
+../configure --prefix=/home/devenv/gdb-9.1
+make -j4
+make install
+{{< / highlight >}}
 
 ### Pretty-Print for GDB
 
@@ -51,25 +53,29 @@ Install subversion
 
 Checkout related packages to enable pretty printing in GDB
 
-    cd /home/devenv/gdb-9.1
-    svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python
-    touch .gdbinit
+{{< highlight shell >}}
+cd /home/devenv/gdb-9.1
+svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python
+touch .gdbinit
+{{< / highlight >}}
 
 Open **.gdbinit** file and copy the following contents
 
-    python
-    import sys, os
-    sys.path.insert(0, os.getenv('GDB_LOC') + '\\python')
-    from libstdcxx.v6.printers import register_libstdcxx_printers
-    register_libstdcxx_printers (None)
-    end
-    set print pretty on
-    set print object on
-    set print static-members on
-    set print vtbl on
-    set print demangle on
-    set demangle-style gnu-v3
-    set print sevenbit-strings off
+{{< highlight python >}}
+python
+import sys, os
+sys.path.insert(0, os.getenv('GDB_LOC') + '\\python')
+from libstdcxx.v6.printers import register_libstdcxx_printers
+register_libstdcxx_printers (None)
+end
+set print pretty on
+set print object on
+set print static-members on
+set print vtbl on
+set print demangle on
+set demangle-style gnu-v3
+set print sevenbit-strings off
+{{< / highlight >}}
 
 `os.getenv('GDB_LOC')` gets **GDB_LOC** environment variable which we will set before opening eclipse, thus it will be able to fetch the GDB location
 
@@ -87,11 +93,13 @@ Download latest linux source files from [https://www.python.org/downloads/](http
 
 Extract downloded compressed file into some temporary location (This will also be compiled)
 
-    mkdir devenv/Python3.8
-    cd into temporary python source folder
-    ./configure --prefix=/home/devenv/Python3.8
-    make -j4
-    make install
+{{< highlight shell >}}
+mkdir devenv/Python3.8
+cd into temporary python source folder
+./configure --prefix=/home/devenv/Python3.8
+make -j4
+make install
+{{< / highlight >}}
 
 ### SCons
 
@@ -99,9 +107,11 @@ Download latest source files from [https://scons.org/pages/download.html](https:
 
 Extract downloaded compressed file into some temporary location (Will be compiled)
 
-    cd devenv/Python3.8/bin
-    #/home/Downloads/scons-3.1.2 is your temporary location
-    ./python /home/Downloads/scons-3.1.2/setup.py install
+{{< highlight shell >}}
+cd devenv/Python3.8/bin
+#/home/Downloads/scons-3.1.2 is your temporary location
+./python /home/Downloads/scons-3.1.2/setup.py install
+{{< / highlight >}}
 
 ### Boost
 
@@ -109,10 +119,12 @@ Download latest compressed source file from under [https://dl.bintray.com/boosto
 
 Extract downlodad compressed file into some temp location (Will be compiled)
 
-    mkdir devenv/boost_1_72_0
-    cd into your temp source location
-    sh bootstrap.sh
-    ./b2 install --prefix=/home/devenv/boost_1_72_0
+{{< highlight shell >}}
+mkdir devenv/boost_1_72_0
+cd into your temp source location
+sh bootstrap.sh
+./b2 install --prefix=/home/devenv/boost_1_72_0
+{{< / highlight >}}
 
 ## Windows 10
 
@@ -156,9 +168,11 @@ Download latest source files from [https://scons.org/pages/download.html](https:
 
 Extract downloaded compressed file into some temporary location (Will be compiled)
 
-    cd devenv\Python38-32
-    #C:\Downloads\scons-3.1.2 is your temporary location
-    python.exe C:\Downloads\scons-3.1.2\setup.py install
+{{< highlight shell >}}
+cd devenv\Python38-32
+#C:\Downloads\scons-3.1.2 is your temporary location
+python.exe C:\Downloads\scons-3.1.2\setup.py install
+{{< / highlight >}}
 
 ### GNU GDB
 
@@ -168,15 +182,17 @@ Extract compressed **.tar** file into **devenv\MinGW\msys\1.0\home\user\gdb-9.1*
 
 Open **devenv\MinGW\msys\1.0\msys.bat**
 
-    #assuming devenv at D:\devenv
-    export PATH="/D/devenv/MinGW/bin:/D/devenv/MinGW/msys/1.0/bin:/D/devenv/Python38-32:/D/devenv/cmake-3.17.0-rc1-win64-x64/bin"
-    mkdir gdb_export
-    cd gdb-9.1
-    mkdir build
-    cd build
-    ../configure --prefix=/home/user/gdb_export
-    make -j4
-    make install
+{{< highlight shell >}}
+#assuming devenv at D:\devenv
+export PATH="/D/devenv/MinGW/bin:/D/devenv/MinGW/msys/1.0/bin:/D/devenv/Python38-32:/D/devenv/cmake-3.17.0-rc1-win64-x64/bin"
+mkdir gdb_export
+cd gdb-9.1
+mkdir build
+cd build
+../configure --prefix=/home/user/gdb_export
+make -j4
+make install
+{{< / highlight >}}
 
 Copy the contents of **gdb_export** folder into **devenv\gdb-9.1**
 
@@ -186,26 +202,30 @@ Download and Install subversion from [https://tortoisesvn.net/downloads.html](ht
 
 Checkout related packages to enable pretty printing in GDB
 
-    cd D:\devenv\gdb-9.1
-    svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python
+{{< highlight shell >}}
+cd D:\devenv\gdb-9.1
+svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python
+{{< / highlight >}}
 
 Create a file inside **devenv/gdb-9.1** folder named as **.gdbinit** (It can be done through NotePad++)
 
 Open **.gdbinit** file and copy the following contents
 
-    python
-    import sys, os
-    sys.path.insert(0, os.getenv('GDB_LOC') + '\\python')
-    from libstdcxx.v6.printers import register_libstdcxx_printers
-    register_libstdcxx_printers (None)
-    end
-    set print pretty on
-    set print object on
-    set print static-members on
-    set print vtbl on
-    set print demangle on
-    set demangle-style gnu-v3
-    set print sevenbit-strings off
+{{< highlight python >}}
+python
+import sys, os
+sys.path.insert(0, os.getenv('GDB_LOC') + '\\python')
+from libstdcxx.v6.printers import register_libstdcxx_printers
+register_libstdcxx_printers (None)
+end
+set print pretty on
+set print object on
+set print static-members on
+set print vtbl on
+set print demangle on
+set demangle-style gnu-v3
+set print sevenbit-strings off
+{{< / highlight >}}
 
 `os.getenv('GDB_LOC')` gets **GDB_LOC** environment variable which we will set before opening eclipse, thus it will be able to fetch the GDB location
 
@@ -225,9 +245,11 @@ Extract downlodad compressed file into some temp location (Will be compiled)
 
 Open **cmd.exe**
 
-    #Clear the PATH variable
-    set PATH=
-    set PATH=D:\devenv\jdk-13.0.2;D:\devenv\MinGW\bin;D:\devenv\MinGW\msys\1.0\bin;D:\devenv\Python38-32;D:\devenv\cmake-3.17.0-rc1-win64-x64;%SYSTEMROOT%;%SYSTEMROOT%\system32
-    cd into your temp source location
-    bootstrap.bat gcc
-    b2 install --prefix="D:\devenv\boost_1_72_0"
+{{< highlight shell >}}
+#Clear the PATH variable
+set PATH=
+set PATH=D:\devenv\jdk-13.0.2;D:\devenv\MinGW\bin;D:\devenv\MinGW\msys\1.0\bin;D:\devenv\Python38-32;D:\devenv\cmake-3.17.0-rc1-win64-x64;%SYSTEMROOT%;%SYSTEMROOT%\system32
+cd into your temp source location
+bootstrap.bat gcc
+b2 install --prefix="D:\devenv\boost_1_72_0"
+{{< / highlight >}}
