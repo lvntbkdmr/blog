@@ -34,6 +34,8 @@ Download latest source files from [http://ftp.gnu.org/gnu/gdb/](http://ftp.gnu.o
 
 Extract compressed **.tar** file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)
 
+### Pretty-Print for GDB
+
 ### JDK
 
 Download **Linux Compressed Archive** from [https://www.oracle.com/java/technologies/javase-jdk13-downloads.html](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html)
@@ -57,3 +59,33 @@ Extract downloaded compressed file into some temporary location (Will be compile
 ### Boost
 
 Download latest compressed source file from under [https://dl.bintray.com/boostorg/release](https://dl.bintray.com/boostorg/release)
+
+Extract downlodad compressed file into some temp location (Will be compiled)
+
+## Windows 10
+
+### Eclipse
+
+Download Eclipse IDE for C/C++ Developers from [https://www.eclipse.org/downloads/packages/](https://www.eclipse.org/downloads/packages/) for Windows 64-bit
+
+Extract compressed **.zip** file into **devenv/eclipse** folder
+
+### GNU GCC
+
+Download MinGW Installation Manager (mingw-get) from [https://osdn.net/projects/mingw/releases/](https://osdn.net/projects/mingw/releases/)
+
+Run mingw-get
+
+Check all Basic Setup packages (gcc-fortran-bin and gcc-ada-bin are not necessary for us, you can uncheck them)
+
+From All Packages screen, uncheck mingw32-gdb-bin and all related gdb packages since we will be installing our own GDB which is the latest one that supports pretty-print with python scripting for C++ STL objects.
+
+### GNU GDB
+
+### JDK
+
+### Python
+
+### SCons
+
+### Boost
