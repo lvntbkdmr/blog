@@ -8,12 +8,13 @@ A cross-platform method to construct a development environment for developing C+
 
 1. Eclipse (IDE)
 2. GNU GCC (Compiler)
-3. CMake (only for Windows)
-4. GNU GDB (Debugger)
-5. JDK (Java Runtime)
-6. Python (To run scripts and required by SCons)
-7. SCons (Build system)
-8. Boost (Advanced C++ libraries)
+3. GNU Binutils (only for Linux)
+4. CMake (only for Windows)
+5. GNU GDB (Debugger with Python support)
+6. JDK (Java Runtime)
+7. Python (To run scripts and required by SCons)
+8. SCons (Build system)
+9. Boost (Advanced C++ libraries)
 
 First of all create a folder named as **devenv** at any location.
 
@@ -27,20 +28,60 @@ Extract compressed **.tar.gz** file into **devenv/eclipse** folder
 
 ### GNU GCC
 
-`sudo apt install build-essential` is sufficient for now
+`git clone``[https://github.com/gcc-mirror/gcc](https://github.com/gcc-mirror/gcc)` at a temporary location
+
+Then follow the commands below
+
+{{< highlight shell >}}
+sudo apt-get install build-essential
+sudo apt-get install libc6-dev
+sudo apt-get install lib32z1
+sudo apt-get install flex
+sudo apt-get install bison
+sudo apt-get install gcc-multilib
+
+#assuming you are at your temp location (such as Downloads)
+cd gcc
+./contrib/download_prerequisites
+mkdir objdir
+cd objdir
+../configure --enable-multilib --disable-werror --prefix=/home/devenv/gcc-10.0.1
+make -j4 BOOT_CFLAGS='-O' bootstrap
+make install-strip
+{{< / highlight >}}
+
+### GNU Binutils
+
+Download latest compressed source file from [https://ftp.gnu.org/gnu/binutils/](https://ftp.gnu.org/gnu/binutils/)
+
+Extract compressed **.tar** into some temp location
+
+{{< highlight shell >}}
+cd binutils-2.34
+mkdir build
+cd build
+../configure --prefix=/home/devenv/binutils-2.34
+make -j4
+make install
+{{< / highlight >}}
 
 ### GNU GDB
+
+> Before start compiling GDB with Python support, please Compile & Install Python first
 
 Download latest source files from [http://ftp.gnu.org/gnu/gdb/](http://ftp.gnu.org/gnu/gdb/)
 
 Extract compressed **.tar** file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)
 
 {{< highlight shell >}}
+export PATH=/home/devenv/Python3.8/bin:$PATH
+export LDFLAGS=-L/home/devenv/Python3.8/lib;
+
 mkdir devenv/gdb-9.1
 cd into your temporary gdb source folder
 mkdir build
 cd build
-../configure --prefix=/home/devenv/gdb-9.1
+../configure --with-python --prefix=/home/devenv/gdb-9.1
 make -j4
 make install
 {{< / highlight >}}
@@ -64,7 +105,7 @@ Open **.gdbinit** file and copy the following contents
 {{< highlight python >}}
 python
 import sys, os
-sys.path.insert(0, os.getenv('GDB_LOC') + '\\python')
+sys.path.insert(0, os.getenv('GDB_LOC') + '/python')
 from libstdcxx.v6.printers import register_libstdcxx_printers
 register_libstdcxx_printers (None)
 end
@@ -253,3 +294,13 @@ cd into your temp source location
 bootstrap.bat gcc
 b2 install --prefix="D:\devenv\boost_1_72_0"
 {{< / highlight >}}
+
+## Shell Script
+
+Todo
+
+## Eclipse
+
+1. Install PyDev from marketplace
+2. Configure Python interpreter (manual unfortunatelly)
+3. From Debug Configurations, select .gdbinit (manual unfortunatelly)
