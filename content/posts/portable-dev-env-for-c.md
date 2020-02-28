@@ -28,7 +28,7 @@ Extract compressed **.tar.gz** file into **devenv/eclipse** folder
 
 ### GNU GCC
 
-`git clone``[https://github.com/gcc-mirror/gcc](https://github.com/gcc-mirror/gcc)` at a temporary location
+`git clone https://github.com/gcc-mirror/gcc` at a temporary location
 
 Then follow the commands below
 
@@ -75,6 +75,7 @@ Extract compressed **.tar** file into some temporary location (for only building
 
 {{< highlight shell >}}
 export PATH=/home/devenv/Python3.8/bin:$PATH
+#Based on https://stackoverflow.com/a/37077248/1693073
 export LDFLAGS=-L/home/devenv/Python3.8/lib;
 
 mkdir devenv/gdb-9.1
