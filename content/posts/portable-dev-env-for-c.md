@@ -237,7 +237,7 @@ Extract downloaded compressed jdk into **devenv/jdk-x.x.x** folder.
 
 ### Boost
 
-RenderCallout NYI
+> As the time of this writing, there is a reported issue when trying to compile Boost 1.72 with MinGW as mentioned [here](https://stackoverflow.com/questions/59529547/error-while-building-boost-library-for-c) and [here](https://github.com/boostorg/type_erasure/issues/16). So it is better to Download Boost 1.70 sources for Windows with MinGW.
 
 Download latest compressed source file from under [https://dl.bintray.com/boostorg/release](https://dl.bintray.com/boostorg/release)
 
