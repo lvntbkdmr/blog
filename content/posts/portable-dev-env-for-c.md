@@ -1,5 +1,5 @@
 ---
-title: "Portable Dev Env for C&#43;&#43;"
+title: "Portable Dev Env for C++"
 date: 28 Feb 20 05:02 UTC
 draft: false
 ---
