@@ -8,11 +8,12 @@ A cross-platform method to construct a development environment for developing C+
 
 1. Eclipse (IDE)
 2. GNU GCC (Compiler)
-3. GNU GDB (Debugger)
-4. JDK (Java Runtime)
-5. Python (To run scripts and required by SCons)
-6. SCons (Build system)
-7. Boost (Advanced C++ libraries)
+3. CMake (only for Windows)
+4. GNU GDB (Debugger)
+5. JDK (Java Runtime)
+6. Python (To run scripts and required by SCons)
+7. SCons (Build system)
+8. Boost (Advanced C++ libraries)
 
 First of all create a folder named as **devenv** at any location.
 
@@ -78,7 +79,7 @@ Extract downlodad compressed file into some temp location (Will be compiled)
 
 Download Eclipse IDE for C/C++ Developers from [https://www.eclipse.org/downloads/packages/](https://www.eclipse.org/downloads/packages/) for Windows 64-bit
 
-Extract compressed **.zip** file into **devenv/eclipse** folder
+Extract compressed **.zip** file into **devenv\eclipse** folder
 
 ### GNU GCC
 
@@ -86,7 +87,7 @@ Download MinGW Installation Manager (mingw-get) from [https://osdn.net/projects/
 
 Run mingw-get
 
-Select destination folder location as **devenv/MinGW**
+Select destination folder location as **devenv\MinGW**
 
 Check all Basic Setup packages (gcc-fortran-bin and gcc-ada-bin are not necessary for us, you can uncheck them)
 
@@ -106,18 +107,48 @@ Extract zip into **devenv**
 
 Download Windows x86 embeddable zip file from [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
 
-Install it into 
+Extract it into **devenv\Python38-32**
+
+### SCons
+
+Download latest source files from [https://scons.org/pages/download.html](https://scons.org/pages/download.html)
+
+Extract downloaded compressed file into some temporary location (Will be compiled)
 
 ### GNU GDB
 
 Download latest source files from [http://ftp.gnu.org/gnu/gdb/](http://ftp.gnu.org/gnu/gdb/)
 
-Extract compressed **.tar** file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)
+Extract compressed **.tar** file into **devenv\MinGW\msys\1.0\home\user\gdb-9.1**
+
+Open **devenv\MinGW\msys\1.0\msys.bat**
+
+Copy the contents of **gdb_export** folder into **devenv\gdb-9.1**
 
 ### Pretty-Print for GDB
 
+Download and Install subversion from [https://tortoisesvn.net/downloads.html](https://tortoisesvn.net/downloads.html)
+
+Checkout related packages to enable pretty printing in GDB
+
+Create a file inside **devenv/gdb-9.1** folder named as **.gdbinit** (It can be done through NotePad++)
+
+Open **.gdbinit** file and copy the following contents
+
+`os.getenv('GDB_LOC')` gets **GDB_LOC** environment variable which we will set before opening eclipse, thus it will be able to fetch the GDB location
+
 ### JDK
 
-### SCons
+Download **Windows x64 Compressed Archive** from [https://www.oracle.com/java/technologies/javase-jdk13-downloads.html](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html)
+
+Extract downloaded compressed jdk into **devenv/jdk-x.x.x** folder.
 
 ### Boost
+
+RenderCallout NYI
+
+Download latest compressed source file from under [https://dl.bintray.com/boostorg/release](https://dl.bintray.com/boostorg/release)
+
+Extract downlodad compressed file into some temp location (Will be compiled)
+
+Open **cmd.exe**
