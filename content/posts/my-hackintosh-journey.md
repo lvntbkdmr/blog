@@ -10,7 +10,7 @@ The term "hackintosh" has been around since Apple has switched from PowerPC to I
 
 ![f513ed30833515af0861b98fcad9339ee55e11f0.jpg](/img/f513ed30833515af0861b98fcad9339ee55e11f0.jpg)
 
-Mac OS X running on Pentium 4 
+Mac OS X running on Pentium 4
 
 So, how my journey started in the first place and most importantly why I wanted to switch from mighty Windows to macOS ?
 
