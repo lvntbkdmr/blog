@@ -1,6 +1,9 @@
 ---
 title: "Hello World"
 date: 17 Feb 20 11:19 UTC
+
+featured_image: "/img/77981e05fbd327445d6a397e651edce59adb576e.jpg"
+
 draft: false
 ---
 

@@ -1,6 +1,9 @@
 ---
 title: "My Hackintosh Journey !"
 date: 29 Jan 20 13:15 UTC
+
+featured_image: "/img/77981e05fbd327445d6a397e651edce59adb576e.jpg"
+
 draft: false
 ---
 
