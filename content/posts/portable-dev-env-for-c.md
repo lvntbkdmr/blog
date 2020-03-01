@@ -1,6 +1,9 @@
 ---
 title: "Portable Dev Env for C++"
 date: 28 Feb 20 05:02 UTC
+
+featured_image: "/img/934ea3d4f64a26ba7020422570308da601fce6b6.jpg"
+
 draft: false
 ---
 
