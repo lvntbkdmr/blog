@@ -60,6 +60,7 @@ Download latest compressed source file from [https://ftp.gnu.org/gnu/binutils/](
 Extract compressed **.tar** into some temp location
 
 {{< highlight shell >}}
+sudo apt-get install texinfo
 cd binutils-2.34
 mkdir build
 cd build
