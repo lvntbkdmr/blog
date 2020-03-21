@@ -77,6 +77,8 @@ Download latest source files from [http://ftp.gnu.org/gnu/gdb/](http://ftp.gnu.o
 
 Extract compressed **.tar** file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)
 
+**--enable-static=yes** is essential since it requires Python to be found in exactly given location in the case of moving GDB directory somewhere else or changing Python directo
+
 {{< highlight shell >}}
 export PATH=/home/devenv/Python3.8/bin:$PATH
 #Based on https://stackoverflow.com/a/37077248/1693073
@@ -86,7 +88,7 @@ mkdir devenv/gdb-9.1
 cd into your temporary gdb source folder
 mkdir build
 cd build
-../configure --with-python --prefix=/home/devenv/gdb-9.1
+../configure --with-python --enable-static=yes --prefix=/home/devenv/gdb-9.1
 make -j4
 make install
 {{< / highlight >}}
