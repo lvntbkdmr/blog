@@ -77,7 +77,7 @@ Download latest source files from [http://ftp.gnu.org/gnu/gdb/](http://ftp.gnu.o
 
 Extract compressed **.tar** file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)
 
-**--enable-static=yes** is essential since it requires Python to be found in exactly given location in the case of moving GDB directory somewhere else or changing Python directo
+**--enable-static=yes** is essential since it requires Python to be found in exactly given location in the case of moving GDB directory somewhere else or changing Python directory.
 
 {{< highlight shell >}}
 export PATH=/home/devenv/Python3.8/bin:$PATH
