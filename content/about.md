@@ -20,6 +20,5 @@ menu: "main"
 English - Professional Working Proficiency
 
 ### Education
-
-Eskisehir Osmangazi University - Electrical and Electronics Engineering (BSc)
-Middle East Technical University - Electrical and Electronics Engineering (MSc)
+* Eskisehir Osmangazi University - Electrical and Electronics Engineering (BSc)
+* Middle East Technical University - Electrical and Electronics Engineering (MSc)
