@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "Levent Bekdemir"
-theme = "hyde"
+theme = "spectre-pixel-theme"
 
 [Menus]
   main = [
