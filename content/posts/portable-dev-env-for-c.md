@@ -35,7 +35,7 @@ Extract compressed **.tar.gz** file into **devenv/eclipse** folder
 
 Then follow the commands below
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 sudo apt-get install build-essential
 sudo apt-get install libc6-dev
 sudo apt-get install lib32z1
@@ -59,7 +59,7 @@ Download latest compressed source file from [https://ftp.gnu.org/gnu/binutils/](
 
 Extract compressed **.tar** into some temp location
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 sudo apt-get install texinfo
 cd binutils-2.34
 mkdir build
@@ -79,7 +79,7 @@ Extract compressed **.tar** file into some temporary location (for only building
 
 **--enable-static=yes** is essential since it requires Python to be found in exactly given location in the case of moving GDB directory somewhere else or changing Python directory.
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 export PATH=/home/devenv/Python3.8/bin:$PATH
 #Based on https://stackoverflow.com/a/37077248/1693073
 export LDFLAGS=-L/home/devenv/Python3.8/lib;
@@ -101,7 +101,7 @@ Install subversion
 
 Checkout related packages to enable pretty printing in GDB
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 cd /home/devenv/gdb-9.1
 svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python
 touch .gdbinit
@@ -141,7 +141,7 @@ Download latest linux source files from [https://www.python.org/downloads/](http
 
 Extract downloded compressed file into some temporary location (This will also be compiled)
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 mkdir devenv/Python3.8
 cd into temporary python source folder
 ./configure --prefix=/home/devenv/Python3.8
@@ -155,7 +155,7 @@ Download latest source files from [https://scons.org/pages/download.html](https:
 
 Extract downloaded compressed file into some temporary location (Will be compiled)
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 cd devenv/Python3.8/bin
 #/home/Downloads/scons-3.1.2 is your temporary location
 ./python /home/Downloads/scons-3.1.2/setup.py install
@@ -167,7 +167,7 @@ Download latest compressed source file from under [https://dl.bintray.com/boosto
 
 Extract downlodad compressed file into some temp location (Will be compiled)
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 mkdir devenv/boost_1_72_0
 cd into your temp source location
 sh bootstrap.sh
@@ -216,7 +216,7 @@ Download latest source files from [https://scons.org/pages/download.html](https:
 
 Extract downloaded compressed file into some temporary location (Will be compiled)
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 cd devenv\Python38-32
 #C:\Downloads\scons-3.1.2 is your temporary location
 python.exe C:\Downloads\scons-3.1.2\setup.py install
@@ -230,7 +230,7 @@ Extract compressed **.tar** file into **devenv\MinGW\msys\1.0\home\user\gdb-9.1*
 
 Open **devenv\MinGW\msys\1.0\msys.bat**
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 #assuming devenv at D:\devenv
 export PATH="/D/devenv/MinGW/bin:/D/devenv/MinGW/msys/1.0/bin:/D/devenv/Python38-32:/D/devenv/cmake-3.17.0-rc1-win64-x64/bin"
 mkdir gdb_export
@@ -250,7 +250,7 @@ Download and Install subversion from [https://tortoisesvn.net/downloads.html](ht
 
 Checkout related packages to enable pretty printing in GDB
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 cd D:\devenv\gdb-9.1
 svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python
 {{< / highlight >}}
@@ -293,7 +293,7 @@ Extract downlodad compressed file into some temp location (Will be compiled)
 
 Open **cmd.exe**
 
-{{< highlight shell >}}
+{{< highlight bash >}}
 #Clear the PATH variable
 set PATH=
 set PATH=D:\devenv\jdk-13.0.2;D:\devenv\MinGW\bin;D:\devenv\MinGW\msys\1.0\bin;D:\devenv\Python38-32;D:\devenv\cmake-3.17.0-rc1-win64-x64;%SYSTEMROOT%;%SYSTEMROOT%\system32
@@ -304,7 +304,7 @@ b2 install --prefix="D:\devenv\boost_1_72_0"
 
 ## Shell Script
 
-Todo
+asdasd
 
 ## Eclipse
 

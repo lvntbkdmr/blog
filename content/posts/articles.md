@@ -10,3 +10,4 @@ draft: false
 [/posts/hello-world](Hello World)
 [/posts/my-hackintosh-journey](My Hackintosh Journey !)
 [/posts/portable-dev-env-for-c](Portable Dev Env for C++)
+[/posts/the-chronicles-of-cmake](The Chronicles of CMake)
