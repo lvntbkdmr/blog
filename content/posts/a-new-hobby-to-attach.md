@@ -5,6 +5,14 @@ date: 10 Jun 20 13:35 UTC
 featured_image: "/img/986c0d20d8b5ca264aa349217ad6370c4824f2a2.jpg"
 
 draft: false
+
+cover:
+    image: "https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png"
+    # can also paste direct link from external site
+    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+    alt: "alt text"
+    caption: "text"
+    relative: false # To use relative path for cover image, used in hugo Page-bundles
 ---
 
 These days I've been working on a DIY built-in bookcase on top of a cabinet for our home office which I share with my wife. 
