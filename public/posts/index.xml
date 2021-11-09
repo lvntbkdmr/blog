@@ -1,34 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Levent Bekdemir</title>
+    <title>Posts on lvnt&#39;s basement</title>
     <link>/posts/</link>
-    <description>Recent content in Posts on Levent Bekdemir</description>
+    <description>Recent content in Posts on lvnt&#39;s basement</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Jan 2020 09:19:00 +0000</lastBuildDate>
-    
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jun 2020 13:35:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Hobby to Attach</title>
+      <link>/posts/a-new-hobby-to-attach/</link>
+      <pubDate>Wed, 10 Jun 2020 13:35:00 +0000</pubDate>
+      
+      <guid>/posts/a-new-hobby-to-attach/</guid>
+      <description>These days I&amp;rsquo;ve been working on a DIY built-in bookcase on top of a cabinet for our home office which I share with my wife.
+Of course when you start a DIY project you first need to get a bunch of tools to be able to build stuff. Therefore, I started researching the minimal setup required for this type of job. Watched several youtube videos, read some very detailed blog posts etc.</description>
+    </item>
     
     <item>
-      <title>How I Setup my Hackintosh !</title>
-      <link>/posts/how-i-setup-my-hackintosh/</link>
-      <pubDate>Wed, 29 Jan 2020 09:19:00 +0000</pubDate>
+      <title>Portable Dev Env for C&#43;&#43;</title>
+      <link>/posts/portable-dev-env-for-c/</link>
+      <pubDate>Fri, 28 Feb 2020 05:02:00 +0000</pubDate>
       
-      <guid>/posts/how-i-setup-my-hackintosh/</guid>
-      <description>My Hackintosh Journey ! A hackintosh journey of me in order to join the elegant &amp;ldquo;just working&amp;rdquo; environment of Apple by a more budget-friendly way.
-The term &amp;ldquo;hackintosh&amp;rdquo; has been around since Apple has switched from PowerPC to Intel architecture around 2005. Ever since then, hackers try to integrate macOS/OS X software to be run on custom made platforms. There is a huge community behind this struggle such as tonymacx86, insanelymac and of course /r/hackintosh sub-reddit.</description>
+      <guid>/posts/portable-dev-env-for-c/</guid>
+      <description>A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :
+ Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.</description>
     </item>
     
     <item>
       <title>Hello World</title>
       <link>/posts/hello-world/</link>
-      <pubDate>Sun, 17 Nov 2019 15:42:40 +0300</pubDate>
+      <pubDate>Mon, 17 Feb 2020 11:19:00 +0000</pubDate>
       
       <guid>/posts/hello-world/</guid>
       <description>Hello all,
 This is the traditional initial post for my blog.
-This blog is created by Hugo framework which is a static website builder. Furthermore, the files of this blog is open-source and hosted in my Github repo and deployed with Netlify.</description>
+This blog is created by Hugo framework which is a static website builder. Furthermore, the files of this blog is open-source and hosted in my Github repo and deployed with Netlify.</description>
+    </item>
+    
+    <item>
+      <title>Articles</title>
+      <link>/posts/articles/</link>
+      <pubDate>Sat, 01 Feb 2020 07:50:00 +0000</pubDate>
+      
+      <guid>/posts/articles/</guid>
+      <description>[/posts/hello-world](Hello World) [/posts/my-hackintosh-journey](My Hackintosh Journey !) [/posts/portable-dev-env-for-c](Portable Dev Env for C++) [/posts/a-new-hobby-to-attach](A New Hobby to Attach)</description>
+    </item>
+    
+    <item>
+      <title>My Hackintosh Journey !</title>
+      <link>/posts/my-hackintosh-journey/</link>
+      <pubDate>Wed, 29 Jan 2020 13:15:00 +0000</pubDate>
+      
+      <guid>/posts/my-hackintosh-journey/</guid>
+      <description>A hackintosh journey of me in order to join the elegant &amp;ldquo;just working&amp;rdquo; environment of Apple by a more budget-friendly way.
+The term &amp;ldquo;hackintosh&amp;rdquo; has been around since Apple has switched from PowerPC to Intel architecture around 2005. Ever since then, hackers try to integrate macOS/OS X software to be run on custom made platforms. There is a huge community behind this struggle such as tonymacx86, insanelymac and of course /r/hackintosh sub-reddit.</description>
     </item>
     
   </channel>
