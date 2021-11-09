@@ -5,6 +5,14 @@ date: 28 Feb 20 05:02 UTC
 featured_image: "/img/934ea3d4f64a26ba7020422570308da601fce6b6.jpg"
 
 draft: false
+
+cover:
+    image: "/img/934ea3d4f64a26ba7020422570308da601fce6b6.jpg"
+    # can also paste direct link from external site
+    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+    alt: "alt text"
+    caption: "text"
+    relative: true # To use relative path for cover image, used in hugo Page-bundles
 ---
 
 A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :

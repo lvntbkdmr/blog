@@ -5,6 +5,14 @@ date: 29 Jan 20 13:15 UTC
 featured_image: "/img/77981e05fbd327445d6a397e651edce59adb576e.jpg"
 
 draft: false
+
+cover:
+    image: "/img/77981e05fbd327445d6a397e651edce59adb576e.jpg"
+    # can also paste direct link from external site
+    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+    alt: "alt text"
+    caption: "text"
+    relative: true # To use relative path for cover image, used in hugo Page-bundles
 ---
 
 A hackintosh journey of me in order to join the elegant "just working" environment of Apple by a more budget-friendly way.
