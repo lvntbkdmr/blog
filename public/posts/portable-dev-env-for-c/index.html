@@ -1,85 +1,71 @@
-<!DOCTYPE html>
-<html lang="en-us" data-theme="pixel">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Levent Bekdemir">
-  <meta name="description" content="I used to be an adventurer like you..">
-  <meta name="generator" content="Hugo 0.88.1" />
-
-  <title>Portable Dev Env for C&#43;&#43; &middot; lvnt&#39;s basement</title>
-
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="/css/spectre.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/highlight.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-  
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  
-
-  
-    <link href="" rel="alternate" type="application/rss+xml" title="lvnt&#39;s basement" />
-  
-
-  
-  <meta property="og:title" content="Portable Dev Env for C&#43;&#43;" />
-<meta property="og:description" content="A cross-platform method to construct a development environment for developing C&#43;&#43; applications by using several tools such as :
- Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C&#43;&#43; libraries)  First of all create a folder named as devenv at any location." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/portable-dev-env-for-c/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-02-28T05:02:00+00:00" />
-<meta property="article:modified_time" content="2020-02-28T05:02:00+00:00" />
-
-
-  
-  <meta itemprop="name" content="Portable Dev Env for C&#43;&#43;">
-<meta itemprop="description" content="A cross-platform method to construct a development environment for developing C&#43;&#43; applications by using several tools such as :
- Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C&#43;&#43; libraries)  First of all create a folder named as devenv at any location."><meta itemprop="datePublished" content="2020-02-28T05:02:00+00:00" />
-<meta itemprop="dateModified" content="2020-02-28T05:02:00+00:00" />
-<meta itemprop="wordCount" content="926">
-<meta itemprop="keywords" content="" />
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Portable Dev Env for C&#43;&#43;"/>
-<meta name="twitter:description" content="A cross-platform method to construct a development environment for developing C&#43;&#43; applications by using several tools such as :
- Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C&#43;&#43; libraries)  First of all create a folder named as devenv at any location."/>
-
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Portable Dev Env for C++ | lvnt's basement</title>
+<meta name=keywords content>
+<meta name=description content="A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :
+ Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.">
+<meta name=author content>
+<link rel=canonical href=https://www.lvnt.be/posts/portable-dev-env-for-c/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.6f60056d44d3f7eb69a4bc6c332b59960f3a995802bded244750232f33713c49.css integrity="sha256-b2AFbUTT9+tppLxsMytZlg86mVgCve0kR1AjLzNxPEk=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://www.lvnt.be/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://www.lvnt.be/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://www.lvnt.be/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://www.lvnt.be/apple-touch-icon.png>
+<link rel=mask-icon href=https://www.lvnt.be/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><meta property="og:title" content="Portable Dev Env for C++">
+<meta property="og:description" content="A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :
+ Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.lvnt.be/posts/portable-dev-env-for-c/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-02-28T05:02:00+00:00">
+<meta property="article:modified_time" content="2020-02-28T05:02:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Portable Dev Env for C++">
+<meta name=twitter:description content="A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :
+ Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://www.lvnt.be/posts/"},{"@type":"ListItem","position":2,"name":"Portable Dev Env for C++","item":"https://www.lvnt.be/posts/portable-dev-env-for-c/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Portable Dev Env for C++","name":"Portable Dev Env for C\u002b\u002b","description":"A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :\n Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.","keywords":[],"articleBody":"A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :\n Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.\nUbuntu 18.04 Eclipse Download Eclipse IDE for C/C++ Developers from https://www.eclipse.org/downloads/packages/ for Linux 64-bit\nExtract compressed .tar.gz file into devenv/eclipse folder\nGNU GCC git clone https://github.com/gcc-mirror/gcc at a temporary location\nThen follow the commands below\nsudo apt-get install build-essential sudo apt-get install libc6-dev sudo apt-get install lib32z1 sudo apt-get install flex sudo apt-get install bison sudo apt-get install gcc-multilib #assuming you are at your temp location (such as Downloads) cd gcc ./contrib/download_prerequisites mkdir objdir cd objdir ../configure --enable-multilib --disable-werror --prefix=/home/devenv/gcc-10.0.1 make -j4 BOOT_CFLAGS='-O' bootstrap make install-strip GNU Binutils Download latest compressed source file from https://ftp.gnu.org/gnu/binutils/\nExtract compressed .tar into some temp location\nsudo apt-get install texinfo cd binutils-2.34 mkdir build cd build ../configure --prefix=/home/devenv/binutils-2.34 make -j4 make install GNU GDB  Before start compiling GDB with Python support, please Compile \u0026 Install Python first\n Download latest source files from http://ftp.gnu.org/gnu/gdb/\nExtract compressed .tar file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)\n–enable-static=yes is essential since it requires Python to be found in exactly given location in the case of moving GDB directory somewhere else or changing Python directory.\nexport PATH=/home/devenv/Python3.8/bin:$PATH #Based on https://stackoverflow.com/a/37077248/1693073 export LDFLAGS=-L/home/devenv/Python3.8/lib; mkdir devenv/gdb-9.1 cd into your temporary gdb source folder mkdir build cd build ../configure --with-python --enable-static=yes --prefix=/home/devenv/gdb-9.1 make -j4 make install Pretty-Print for GDB Install subversion\nsudo apt-get install subversion\nCheckout related packages to enable pretty printing in GDB\ncd /home/devenv/gdb-9.1 svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python touch .gdbinit Open .gdbinit file and copy the following contents\npython import sys, os sys.path.insert(0, os.getenv('GDB_LOC') + '/python') from libstdcxx.v6.printers import register_libstdcxx_printers register_libstdcxx_printers (None) end set print pretty on set print object on set print static-members on set print vtbl on set print demangle on set demangle-style gnu-v3 set print sevenbit-strings off os.getenv('GDB_LOC') gets GDB_LOC environment variable which we will set before opening eclipse, thus it will be able to fetch the GDB location\nJDK Download Linux Compressed Archive from https://www.oracle.com/java/technologies/javase-jdk13-downloads.html\nmkdir devenv/jdk-13.0.2\nExtract downloaded compressed jdk into devenv/jdk-x.x.x folder.\nPython Download latest linux source files from https://www.python.org/downloads/\nExtract downloded compressed file into some temporary location (This will also be compiled)\nmkdir devenv/Python3.8 cd into temporary python source folder ./configure --prefix=/home/devenv/Python3.8 make -j4 make install SCons Download latest source files from https://scons.org/pages/download.html\nExtract downloaded compressed file into some temporary location (Will be compiled)\ncd devenv/Python3.8/bin #/home/Downloads/scons-3.1.2 is your temporary location ./python /home/Downloads/scons-3.1.2/setup.py install Boost Download latest compressed source file from under https://dl.bintray.com/boostorg/release\nExtract downlodad compressed file into some temp location (Will be compiled)\nmkdir devenv/boost_1_72_0 cd into your temp source location sh bootstrap.sh ./b2 install --prefix=/home/devenv/boost_1_72_0 Windows 10 Eclipse Download Eclipse IDE for C/C++ Developers from https://www.eclipse.org/downloads/packages/ for Windows 64-bit\nExtract compressed .zip file into devenv\\eclipse folder\nGNU GCC Download MinGW Installation Manager (mingw-get) from https://osdn.net/projects/mingw/releases/\nRun mingw-get\nSelect destination folder location as devenv\\MinGW\nCheck all Basic Setup packages (gcc-fortran-bin and gcc-ada-bin are not necessary for us, you can uncheck them)\nFrom All Packages screen, uncheck mingw32-gdb-bin and all related gdb packages since we will be installing our own GDB which is the latest one that supports pretty-print with python scripting for C++ STL objects.\nInstall and exit.\nCMake It is required to build some programs so it is better to have it inside development environment.\nDownload Windows win64-x64 ZIP(Binary distributions) from https://cmake.org/download/\nExtract zip into devenv\nPython Download Windows x86 embeddable zip file from https://www.python.org/downloads/windows/\nExtract it into devenv\\Python38-32\nSCons Download latest source files from https://scons.org/pages/download.html\nExtract downloaded compressed file into some temporary location (Will be compiled)\ncd devenv\\Python38-32 #C:\\Downloads\\scons-3.1.2 is your temporary location python.exe C:\\Downloads\\scons-3.1.2\\setup.py install GNU GDB Download latest source files from http://ftp.gnu.org/gnu/gdb/\nExtract compressed .tar file into devenv\\MinGW\\msys\\1.0\\home\\user\\gdb-9.1\nOpen devenv\\MinGW\\msys\\1.0\\msys.bat\n#assuming devenv at D:\\devenv export PATH=\"/D/devenv/MinGW/bin:/D/devenv/MinGW/msys/1.0/bin:/D/devenv/Python38-32:/D/devenv/cmake-3.17.0-rc1-win64-x64/bin\" mkdir gdb_export cd gdb-9.1 mkdir build cd build ../configure --prefix=/home/user/gdb_export make -j4 make install Copy the contents of gdb_export folder into devenv\\gdb-9.1\nPretty-Print for GDB Download and Install subversion from https://tortoisesvn.net/downloads.html\nCheckout related packages to enable pretty printing in GDB\ncd D:\\devenv\\gdb-9.1 svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python Create a file inside devenv/gdb-9.1 folder named as .gdbinit (It can be done through NotePad++)\nOpen .gdbinit file and copy the following contents\npython import sys, os sys.path.insert(0, os.getenv('GDB_LOC') + '\\\\python') from libstdcxx.v6.printers import register_libstdcxx_printers register_libstdcxx_printers (None) end set print pretty on set print object on set print static-members on set print vtbl on set print demangle on set demangle-style gnu-v3 set print sevenbit-strings off os.getenv('GDB_LOC') gets GDB_LOC environment variable which we will set before opening eclipse, thus it will be able to fetch the GDB location\nJDK Download Windows x64 Compressed Archive from https://www.oracle.com/java/technologies/javase-jdk13-downloads.html\nExtract downloaded compressed jdk into devenv/jdk-x.x.x folder.\nBoost  As the time of this writing, there is a reported issue when trying to compile Boost 1.72 with MinGW as mentioned here and here. So it is better to Download Boost 1.70 sources for Windows with MinGW.\n Download latest compressed source file from under https://dl.bintray.com/boostorg/release\nExtract downlodad compressed file into some temp location (Will be compiled)\nOpen cmd.exe\n#Clear the PATH variable set PATH= set PATH=D:\\devenv\\jdk-13.0.2;D:\\devenv\\MinGW\\bin;D:\\devenv\\MinGW\\msys\\1.0\\bin;D:\\devenv\\Python38-32;D:\\devenv\\cmake-3.17.0-rc1-win64-x64;%SYSTEMROOT%;%SYSTEMROOT%\\system32 cd into your temp source location bootstrap.bat gcc b2 install --prefix=\"D:\\devenv\\boost_1_72_0\" Shell Script asdasd\nEclipse  Install PyDev from marketplace Configure Python interpreter (manual unfortunatelly) From Debug Configurations, select .gdbinit (manual unfortunatelly)  ","wordCount":"926","inLanguage":"en","datePublished":"2020-02-28T05:02:00Z","dateModified":"2020-02-28T05:02:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.lvnt.be/posts/portable-dev-env-for-c/"},"publisher":{"@type":"Organization","name":"lvnt's basement","logo":{"@type":"ImageObject","url":"https://www.lvnt.be/favicon.ico"}}}</script>
 </head>
-
-<body onload="setPixelFont()">
-  <div class="container p-fixed" style="z-index:3">
-  <nav class="navbar m-2 p-2 s-rounded shadow bg-primary">
-    <section class="navbar-section">
-      
-    </section>
-    <section class="navbar-section">
-      
-        <a class="btn btn-primary" href='/'>Home</a>
-      
-
-      
-        <a class="btn btn-primary mx-2" href="/about/">About</a>
-      
-
-      
-      <a class="btn btn-accent" href="" target="_blank"><i class="fas fa-rss fa-lg"></i></a>
-      
-    </section>
-  </nav>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://www.lvnt.be/ accesskey=h title="lvnt's basement (Alt + H)">lvnt's basement</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
 </div>
-
-  <section class="container grid-md">
-  <div class="columns">
-    
-    
-<article class="container p-centered mt-space">
-  <header>
-    <h2 class="text-center">Portable Dev Env for C&#43;&#43;</h2>
-    <h6 class="text-gray text-italic"></h6>
-  </header>
-  <section class="my-gap">
-    <p>A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :</p>
+<ul id=menu>
+<li>
+<a href=https://www.lvnt.be/about/ title=About>
+<span>About</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<h1 class=post-title>
+Portable Dev Env for C++
+</h1>
+<div class=post-meta><span title="2020-02-28 05:02:00 +0000 UTC">February 28, 2020</span>
+</div>
+</header>
+<div class=post-content><p>A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :</p>
 <ol>
 <li>Eclipse (IDE)</li>
 <li>GNU GCC (Compiler)</li>
@@ -92,252 +78,203 @@
 <li>Boost (Advanced C++ libraries)</li>
 </ol>
 <p>First of all create a folder named as <strong>devenv</strong> at any location.</p>
-<h2 id="ubuntu-1804">Ubuntu 18.04</h2>
-<h3 id="eclipse">Eclipse</h3>
-<p>Download Eclipse IDE for C/C++ Developers from <a href="https://www.eclipse.org/downloads/packages/">https://www.eclipse.org/downloads/packages/</a> for Linux 64-bit</p>
+<h2 id=ubuntu-1804>Ubuntu 18.04<a hidden class=anchor aria-hidden=true href=#ubuntu-1804>#</a></h2>
+<h3 id=eclipse>Eclipse<a hidden class=anchor aria-hidden=true href=#eclipse>#</a></h3>
+<p>Download Eclipse IDE for C/C++ Developers from <a href=https://www.eclipse.org/downloads/packages/>https://www.eclipse.org/downloads/packages/</a> for Linux 64-bit</p>
 <p>Extract compressed <strong>.tar.gz</strong> file into <strong>devenv/eclipse</strong> folder</p>
-<h3 id="gnu-gcc">GNU GCC</h3>
+<h3 id=gnu-gcc>GNU GCC<a hidden class=anchor aria-hidden=true href=#gnu-gcc>#</a></h3>
 <p><code>git clone https://github.com/gcc-mirror/gcc</code> at a temporary location</p>
 <p>Then follow the commands below</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install build-essential
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get install build-essential
 sudo apt-get install libc6-dev
 sudo apt-get install lib32z1
 sudo apt-get install flex
 sudo apt-get install bison
 sudo apt-get install gcc-multilib
 
-<span style="color:#75715e">#assuming you are at your temp location (such as Downloads)</span>
+<span style=color:#75715e>#assuming you are at your temp location (such as Downloads)</span>
 cd gcc
 ./contrib/download_prerequisites
 mkdir objdir
 cd objdir
-../configure --enable-multilib --disable-werror --prefix<span style="color:#f92672">=</span>/home/devenv/gcc-10.0.1
-make -j4 BOOT_CFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;-O&#39;</span> bootstrap
+../configure --enable-multilib --disable-werror --prefix<span style=color:#f92672>=</span>/home/devenv/gcc-10.0.1
+make -j4 BOOT_CFLAGS<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;-O&#39;</span> bootstrap
 make install-strip</code></pre></div>
-<h3 id="gnu-binutils">GNU Binutils</h3>
-<p>Download latest compressed source file from <a href="https://ftp.gnu.org/gnu/binutils/">https://ftp.gnu.org/gnu/binutils/</a></p>
+<h3 id=gnu-binutils>GNU Binutils<a hidden class=anchor aria-hidden=true href=#gnu-binutils>#</a></h3>
+<p>Download latest compressed source file from <a href=https://ftp.gnu.org/gnu/binutils/>https://ftp.gnu.org/gnu/binutils/</a></p>
 <p>Extract compressed <strong>.tar</strong> into some temp location</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install texinfo
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get install texinfo
 cd binutils-2.34
 mkdir build
 cd build
-../configure --prefix<span style="color:#f92672">=</span>/home/devenv/binutils-2.34
+../configure --prefix<span style=color:#f92672>=</span>/home/devenv/binutils-2.34
 make -j4
 make install</code></pre></div>
-<h3 id="gnu-gdb">GNU GDB</h3>
+<h3 id=gnu-gdb>GNU GDB<a hidden class=anchor aria-hidden=true href=#gnu-gdb>#</a></h3>
 <blockquote>
-<p>Before start compiling GDB with Python support, please Compile &amp; Install Python first</p>
+<p>Before start compiling GDB with Python support, please Compile & Install Python first</p>
 </blockquote>
-<p>Download latest source files from <a href="http://ftp.gnu.org/gnu/gdb/">http://ftp.gnu.org/gnu/gdb/</a></p>
+<p>Download latest source files from <a href=http://ftp.gnu.org/gnu/gdb/>http://ftp.gnu.org/gnu/gdb/</a></p>
 <p>Extract compressed <strong>.tar</strong> file into some temporary location (for only building purposes, source files of gdb will not be a part of our development environment)</p>
 <p><strong>&ndash;enable-static=yes</strong> is essential since it requires Python to be found in exactly given location in the case of moving GDB directory somewhere else or changing Python directory.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PATH<span style="color:#f92672">=</span>/home/devenv/Python3.8/bin:$PATH
-<span style="color:#75715e">#Based on https://stackoverflow.com/a/37077248/1693073</span>
-export LDFLAGS<span style="color:#f92672">=</span>-L/home/devenv/Python3.8/lib;
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>export PATH<span style=color:#f92672>=</span>/home/devenv/Python3.8/bin:$PATH
+<span style=color:#75715e>#Based on https://stackoverflow.com/a/37077248/1693073</span>
+export LDFLAGS<span style=color:#f92672>=</span>-L/home/devenv/Python3.8/lib;
 
 mkdir devenv/gdb-9.1
 cd into your temporary gdb source folder
 mkdir build
 cd build
-../configure --with-python --enable-static<span style="color:#f92672">=</span>yes --prefix<span style="color:#f92672">=</span>/home/devenv/gdb-9.1
+../configure --with-python --enable-static<span style=color:#f92672>=</span>yes --prefix<span style=color:#f92672>=</span>/home/devenv/gdb-9.1
 make -j4
 make install</code></pre></div>
-<h3 id="pretty-print-for-gdb">Pretty-Print for GDB</h3>
+<h3 id=pretty-print-for-gdb>Pretty-Print for GDB<a hidden class=anchor aria-hidden=true href=#pretty-print-for-gdb>#</a></h3>
 <p>Install subversion</p>
 <p><code>sudo apt-get install subversion</code></p>
 <p>Checkout related packages to enable pretty printing in GDB</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /home/devenv/gdb-9.1
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd /home/devenv/gdb-9.1
 svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python
 touch .gdbinit</code></pre></div>
 <p>Open <strong>.gdbinit</strong> file and copy the following contents</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python
-<span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span> os
-sys<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">0</span>, os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;GDB_LOC&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/python&#39;</span>)
-<span style="color:#f92672">from</span> libstdcxx.v6.printers <span style="color:#f92672">import</span> register_libstdcxx_printers
-register_libstdcxx_printers (<span style="color:#66d9ef">None</span>)
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>python
+<span style=color:#f92672>import</span> sys<span style=color:#f92672>,</span> os
+sys<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>insert(<span style=color:#ae81ff>0</span>, os<span style=color:#f92672>.</span>getenv(<span style=color:#e6db74>&#39;GDB_LOC&#39;</span>) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;/python&#39;</span>)
+<span style=color:#f92672>from</span> libstdcxx.v6.printers <span style=color:#f92672>import</span> register_libstdcxx_printers
+register_libstdcxx_printers (<span style=color:#66d9ef>None</span>)
 end
 set print pretty on
 set print object on
-set print static<span style="color:#f92672">-</span>members on
+set print static<span style=color:#f92672>-</span>members on
 set print vtbl on
 set print demangle on
-set demangle<span style="color:#f92672">-</span>style gnu<span style="color:#f92672">-</span>v3
-set print sevenbit<span style="color:#f92672">-</span>strings off</code></pre></div>
+set demangle<span style=color:#f92672>-</span>style gnu<span style=color:#f92672>-</span>v3
+set print sevenbit<span style=color:#f92672>-</span>strings off</code></pre></div>
 <p><code>os.getenv('GDB_LOC')</code> gets <strong>GDB_LOC</strong> environment variable which we will set before opening eclipse, thus it will be able to fetch the GDB location</p>
-<h3 id="jdk">JDK</h3>
-<p>Download <strong>Linux Compressed Archive</strong> from <a href="https://www.oracle.com/java/technologies/javase-jdk13-downloads.html">https://www.oracle.com/java/technologies/javase-jdk13-downloads.html</a></p>
+<h3 id=jdk>JDK<a hidden class=anchor aria-hidden=true href=#jdk>#</a></h3>
+<p>Download <strong>Linux Compressed Archive</strong> from <a href=https://www.oracle.com/java/technologies/javase-jdk13-downloads.html>https://www.oracle.com/java/technologies/javase-jdk13-downloads.html</a></p>
 <p><code>mkdir devenv/jdk-13.0.2</code></p>
 <p>Extract downloaded compressed jdk into <strong>devenv/jdk-x.x.x</strong> folder.</p>
-<h3 id="python">Python</h3>
-<p>Download latest linux source files from <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+<h3 id=python>Python<a hidden class=anchor aria-hidden=true href=#python>#</a></h3>
+<p>Download latest linux source files from <a href=https://www.python.org/downloads/>https://www.python.org/downloads/</a></p>
 <p>Extract downloded compressed file into some temporary location (This will also be compiled)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir devenv/Python3.8
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir devenv/Python3.8
 cd into temporary python source folder
-./configure --prefix<span style="color:#f92672">=</span>/home/devenv/Python3.8
+./configure --prefix<span style=color:#f92672>=</span>/home/devenv/Python3.8
 make -j4
 make install</code></pre></div>
-<h3 id="scons">SCons</h3>
-<p>Download latest source files from <a href="https://scons.org/pages/download.html">https://scons.org/pages/download.html</a></p>
+<h3 id=scons>SCons<a hidden class=anchor aria-hidden=true href=#scons>#</a></h3>
+<p>Download latest source files from <a href=https://scons.org/pages/download.html>https://scons.org/pages/download.html</a></p>
 <p>Extract downloaded compressed file into some temporary location (Will be compiled)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd devenv/Python3.8/bin
-<span style="color:#75715e">#/home/Downloads/scons-3.1.2 is your temporary location</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd devenv/Python3.8/bin
+<span style=color:#75715e>#/home/Downloads/scons-3.1.2 is your temporary location</span>
 ./python /home/Downloads/scons-3.1.2/setup.py install</code></pre></div>
-<h3 id="boost">Boost</h3>
-<p>Download latest compressed source file from under <a href="https://dl.bintray.com/boostorg/release">https://dl.bintray.com/boostorg/release</a></p>
+<h3 id=boost>Boost<a hidden class=anchor aria-hidden=true href=#boost>#</a></h3>
+<p>Download latest compressed source file from under <a href=https://dl.bintray.com/boostorg/release>https://dl.bintray.com/boostorg/release</a></p>
 <p>Extract downlodad compressed file into some temp location (Will be compiled)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir devenv/boost_1_72_0
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir devenv/boost_1_72_0
 cd into your temp source location
 sh bootstrap.sh
-./b2 install --prefix<span style="color:#f92672">=</span>/home/devenv/boost_1_72_0</code></pre></div>
-<h2 id="windows-10">Windows 10</h2>
-<h3 id="eclipse-1">Eclipse</h3>
-<p>Download Eclipse IDE for C/C++ Developers from <a href="https://www.eclipse.org/downloads/packages/">https://www.eclipse.org/downloads/packages/</a> for Windows 64-bit</p>
+./b2 install --prefix<span style=color:#f92672>=</span>/home/devenv/boost_1_72_0</code></pre></div>
+<h2 id=windows-10>Windows 10<a hidden class=anchor aria-hidden=true href=#windows-10>#</a></h2>
+<h3 id=eclipse-1>Eclipse<a hidden class=anchor aria-hidden=true href=#eclipse-1>#</a></h3>
+<p>Download Eclipse IDE for C/C++ Developers from <a href=https://www.eclipse.org/downloads/packages/>https://www.eclipse.org/downloads/packages/</a> for Windows 64-bit</p>
 <p>Extract compressed <strong>.zip</strong> file into <strong>devenv\eclipse</strong> folder</p>
-<h3 id="gnu-gcc-1">GNU GCC</h3>
-<p>Download MinGW Installation Manager (mingw-get) from <a href="https://osdn.net/projects/mingw/releases/">https://osdn.net/projects/mingw/releases/</a></p>
+<h3 id=gnu-gcc-1>GNU GCC<a hidden class=anchor aria-hidden=true href=#gnu-gcc-1>#</a></h3>
+<p>Download MinGW Installation Manager (mingw-get) from <a href=https://osdn.net/projects/mingw/releases/>https://osdn.net/projects/mingw/releases/</a></p>
 <p>Run mingw-get</p>
 <p>Select destination folder location as <strong>devenv\MinGW</strong></p>
 <p>Check all Basic Setup packages (gcc-fortran-bin and gcc-ada-bin are not necessary for us, you can uncheck them)</p>
 <p>From All Packages screen, uncheck <strong>mingw32-gdb-bin</strong> and all related gdb packages since we will be installing our own GDB which is the latest one that supports pretty-print with python scripting for C++ STL objects.</p>
 <p>Install and exit.</p>
-<h3 id="cmake">CMake</h3>
+<h3 id=cmake>CMake<a hidden class=anchor aria-hidden=true href=#cmake>#</a></h3>
 <p>It is required to build some programs so it is better to have it inside development environment.</p>
-<p>Download Windows win64-x64 ZIP(Binary distributions) from <a href="https://cmake.org/download/">https://cmake.org/download/</a></p>
+<p>Download Windows win64-x64 ZIP(Binary distributions) from <a href=https://cmake.org/download/>https://cmake.org/download/</a></p>
 <p>Extract zip into <strong>devenv</strong></p>
-<h3 id="python-1">Python</h3>
-<p>Download Windows x86 embeddable zip file from <a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></p>
+<h3 id=python-1>Python<a hidden class=anchor aria-hidden=true href=#python-1>#</a></h3>
+<p>Download Windows x86 embeddable zip file from <a href=https://www.python.org/downloads/windows/>https://www.python.org/downloads/windows/</a></p>
 <p>Extract it into <strong>devenv\Python38-32</strong></p>
-<h3 id="scons-1">SCons</h3>
-<p>Download latest source files from <a href="https://scons.org/pages/download.html">https://scons.org/pages/download.html</a></p>
+<h3 id=scons-1>SCons<a hidden class=anchor aria-hidden=true href=#scons-1>#</a></h3>
+<p>Download latest source files from <a href=https://scons.org/pages/download.html>https://scons.org/pages/download.html</a></p>
 <p>Extract downloaded compressed file into some temporary location (Will be compiled)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd devenv<span style="color:#ae81ff">\P</span>ython38-32
-<span style="color:#75715e">#C:\Downloads\scons-3.1.2 is your temporary location</span>
-python.exe C:<span style="color:#ae81ff">\D</span>ownloads<span style="color:#ae81ff">\s</span>cons-3.1.2<span style="color:#ae81ff">\s</span>etup.py install</code></pre></div>
-<h3 id="gnu-gdb-1">GNU GDB</h3>
-<p>Download latest source files from <a href="http://ftp.gnu.org/gnu/gdb/">http://ftp.gnu.org/gnu/gdb/</a></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd devenv<span style=color:#ae81ff>\P</span>ython38-32
+<span style=color:#75715e>#C:\Downloads\scons-3.1.2 is your temporary location</span>
+python.exe C:<span style=color:#ae81ff>\D</span>ownloads<span style=color:#ae81ff>\s</span>cons-3.1.2<span style=color:#ae81ff>\s</span>etup.py install</code></pre></div>
+<h3 id=gnu-gdb-1>GNU GDB<a hidden class=anchor aria-hidden=true href=#gnu-gdb-1>#</a></h3>
+<p>Download latest source files from <a href=http://ftp.gnu.org/gnu/gdb/>http://ftp.gnu.org/gnu/gdb/</a></p>
 <p>Extract compressed <strong>.tar</strong> file into <strong>devenv\MinGW\msys\1.0\home\user\gdb-9.1</strong></p>
 <p>Open <strong>devenv\MinGW\msys\1.0\msys.bat</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#assuming devenv at D:\devenv</span>
-export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/D/devenv/MinGW/bin:/D/devenv/MinGW/msys/1.0/bin:/D/devenv/Python38-32:/D/devenv/cmake-3.17.0-rc1-win64-x64/bin&#34;</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#assuming devenv at D:\devenv</span>
+export PATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/D/devenv/MinGW/bin:/D/devenv/MinGW/msys/1.0/bin:/D/devenv/Python38-32:/D/devenv/cmake-3.17.0-rc1-win64-x64/bin&#34;</span>
 mkdir gdb_export
 cd gdb-9.1
 mkdir build
 cd build
-../configure --prefix<span style="color:#f92672">=</span>/home/user/gdb_export
+../configure --prefix<span style=color:#f92672>=</span>/home/user/gdb_export
 make -j4
 make install</code></pre></div>
 <p>Copy the contents of <strong>gdb_export</strong> folder into <strong>devenv\gdb-9.1</strong></p>
-<h3 id="pretty-print-for-gdb-1">Pretty-Print for GDB</h3>
-<p>Download and Install subversion from <a href="https://tortoisesvn.net/downloads.html">https://tortoisesvn.net/downloads.html</a></p>
+<h3 id=pretty-print-for-gdb-1>Pretty-Print for GDB<a hidden class=anchor aria-hidden=true href=#pretty-print-for-gdb-1>#</a></h3>
+<p>Download and Install subversion from <a href=https://tortoisesvn.net/downloads.html>https://tortoisesvn.net/downloads.html</a></p>
 <p>Checkout related packages to enable pretty printing in GDB</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd D:<span style="color:#ae81ff">\d</span>evenv<span style="color:#ae81ff">\g</span>db-9.1
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd D:<span style=color:#ae81ff>\d</span>evenv<span style=color:#ae81ff>\g</span>db-9.1
 svn co https://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python</code></pre></div>
 <p>Create a file inside <strong>devenv/gdb-9.1</strong> folder named as <strong>.gdbinit</strong> (It can be done through NotePad++)</p>
 <p>Open <strong>.gdbinit</strong> file and copy the following contents</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">python
-<span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span> os
-sys<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">0</span>, os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#39;GDB_LOC&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">python&#39;</span>)
-<span style="color:#f92672">from</span> libstdcxx.v6.printers <span style="color:#f92672">import</span> register_libstdcxx_printers
-register_libstdcxx_printers (<span style="color:#66d9ef">None</span>)
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>python
+<span style=color:#f92672>import</span> sys<span style=color:#f92672>,</span> os
+sys<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>insert(<span style=color:#ae81ff>0</span>, os<span style=color:#f92672>.</span>getenv(<span style=color:#e6db74>&#39;GDB_LOC&#39;</span>) <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\\</span><span style=color:#e6db74>python&#39;</span>)
+<span style=color:#f92672>from</span> libstdcxx.v6.printers <span style=color:#f92672>import</span> register_libstdcxx_printers
+register_libstdcxx_printers (<span style=color:#66d9ef>None</span>)
 end
 set print pretty on
 set print object on
-set print static<span style="color:#f92672">-</span>members on
+set print static<span style=color:#f92672>-</span>members on
 set print vtbl on
 set print demangle on
-set demangle<span style="color:#f92672">-</span>style gnu<span style="color:#f92672">-</span>v3
-set print sevenbit<span style="color:#f92672">-</span>strings off</code></pre></div>
+set demangle<span style=color:#f92672>-</span>style gnu<span style=color:#f92672>-</span>v3
+set print sevenbit<span style=color:#f92672>-</span>strings off</code></pre></div>
 <p><code>os.getenv('GDB_LOC')</code> gets <strong>GDB_LOC</strong> environment variable which we will set before opening eclipse, thus it will be able to fetch the GDB location</p>
-<h3 id="jdk-1">JDK</h3>
-<p>Download <strong>Windows x64 Compressed Archive</strong> from <a href="https://www.oracle.com/java/technologies/javase-jdk13-downloads.html">https://www.oracle.com/java/technologies/javase-jdk13-downloads.html</a></p>
+<h3 id=jdk-1>JDK<a hidden class=anchor aria-hidden=true href=#jdk-1>#</a></h3>
+<p>Download <strong>Windows x64 Compressed Archive</strong> from <a href=https://www.oracle.com/java/technologies/javase-jdk13-downloads.html>https://www.oracle.com/java/technologies/javase-jdk13-downloads.html</a></p>
 <p>Extract downloaded compressed jdk into <strong>devenv/jdk-x.x.x</strong> folder.</p>
-<h3 id="boost-1">Boost</h3>
+<h3 id=boost-1>Boost<a hidden class=anchor aria-hidden=true href=#boost-1>#</a></h3>
 <blockquote>
-<p>As the time of this writing, there is a reported issue when trying to compile Boost 1.72 with MinGW as mentioned <a href="https://stackoverflow.com/questions/59529547/error-while-building-boost-library-for-c">here</a> and <a href="https://github.com/boostorg/type_erasure/issues/16">here</a>. So it is better to Download Boost 1.70 sources for Windows with MinGW.</p>
+<p>As the time of this writing, there is a reported issue when trying to compile Boost 1.72 with MinGW as mentioned <a href=https://stackoverflow.com/questions/59529547/error-while-building-boost-library-for-c>here</a> and <a href=https://github.com/boostorg/type_erasure/issues/16>here</a>. So it is better to Download Boost 1.70 sources for Windows with MinGW.</p>
 </blockquote>
-<p>Download latest compressed source file from under <a href="https://dl.bintray.com/boostorg/release">https://dl.bintray.com/boostorg/release</a></p>
+<p>Download latest compressed source file from under <a href=https://dl.bintray.com/boostorg/release>https://dl.bintray.com/boostorg/release</a></p>
 <p>Extract downlodad compressed file into some temp location (Will be compiled)</p>
 <p>Open <strong>cmd.exe</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Clear the PATH variable</span>
-set PATH<span style="color:#f92672">=</span>
-set PATH<span style="color:#f92672">=</span>D:<span style="color:#ae81ff">\d</span>evenv<span style="color:#ae81ff">\j</span>dk-13.0.2;D:<span style="color:#ae81ff">\d</span>evenv<span style="color:#ae81ff">\M</span>inGW<span style="color:#ae81ff">\b</span>in;D:<span style="color:#ae81ff">\d</span>evenv<span style="color:#ae81ff">\M</span>inGW<span style="color:#ae81ff">\m</span>sys<span style="color:#ae81ff">\1</span>.0<span style="color:#ae81ff">\b</span>in;D:<span style="color:#ae81ff">\d</span>evenv<span style="color:#ae81ff">\P</span>ython38-32;D:<span style="color:#ae81ff">\d</span>evenv<span style="color:#ae81ff">\c</span>make-3.17.0-rc1-win64-x64;%SYSTEMROOT%;%SYSTEMROOT%<span style="color:#ae81ff">\s</span>ystem32
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#Clear the PATH variable</span>
+set PATH<span style=color:#f92672>=</span>
+set PATH<span style=color:#f92672>=</span>D:<span style=color:#ae81ff>\d</span>evenv<span style=color:#ae81ff>\j</span>dk-13.0.2;D:<span style=color:#ae81ff>\d</span>evenv<span style=color:#ae81ff>\M</span>inGW<span style=color:#ae81ff>\b</span>in;D:<span style=color:#ae81ff>\d</span>evenv<span style=color:#ae81ff>\M</span>inGW<span style=color:#ae81ff>\m</span>sys<span style=color:#ae81ff>\1</span>.0<span style=color:#ae81ff>\b</span>in;D:<span style=color:#ae81ff>\d</span>evenv<span style=color:#ae81ff>\P</span>ython38-32;D:<span style=color:#ae81ff>\d</span>evenv<span style=color:#ae81ff>\c</span>make-3.17.0-rc1-win64-x64;%SYSTEMROOT%;%SYSTEMROOT%<span style=color:#ae81ff>\s</span>ystem32
 cd into your temp source location
 bootstrap.bat gcc
-b2 install --prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;D:\devenv\boost_1_72_0&#34;</span></code></pre></div>
-<h2 id="shell-script">Shell Script</h2>
+b2 install --prefix<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;D:\devenv\boost_1_72_0&#34;</span></code></pre></div>
+<h2 id=shell-script>Shell Script<a hidden class=anchor aria-hidden=true href=#shell-script>#</a></h2>
 <p>asdasd</p>
-<h2 id="eclipse-2">Eclipse</h2>
+<h2 id=eclipse-2>Eclipse<a hidden class=anchor aria-hidden=true href=#eclipse-2>#</a></h2>
 <ol>
 <li>Install PyDev from marketplace</li>
 <li>Configure Python interpreter (manual unfortunatelly)</li>
 <li>From Debug Configurations, select .gdbinit (manual unfortunatelly)</li>
 </ol>
-
-
-    
-  </section>
-  <div class="divider my-gap"></div>
-  <footer class="col-12 d-inline-block">
-    <span class="float-left">
-      <button class="btn btn-action btn-accent shadow s-circle" onclick="window.history.back();"><i class="fas fa-arrow-left"></i></button>
-    </span>
-    <span class="float-right">
-      <div class="text-right float-left mx-2">
-        <span class="text-dark">Levent Bekdemir</span><br>
-        <span class="text-gray">I&#39;m a Programmer.</span>
-      </div>
-      <figure class="avatar avatar-lg">
-        <img id="profile">
-      </figure>
-    </span>
-  </footer>
-</article>
-
-    <footer class="container p-centered text-center my-gap">
-  
-    <div class="container">
-
-  
-    <a class="symbol" href="mailto:lvntbkdmr@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
-  
-  </a>
-
-  
-    <a class="symbol" href="https://github.com/lvntbkdmr/" target="_blank"><i class="fab fa-github"></i>
-  
-  </a>
-
-  
-    <a class="symbol" href="https://www.hackerrank.com/lvntbkdmr/" target="_blank"><i class="fab fa-hackerrank"></i>
-  
-  </a>
-
-  
-    <a class="symbol" href="https://www.linkedin.com/in/leventbekdemir/" target="_blank"><i class="fab fa-linkedin"></i>
-  
-  </a>
-
 </div>
-
-  
-
-  <small class="text-gray">
-  
-    © Copyright 2021 Levent Bekdemir
-  
-  </small>
+<footer class=post-footer>
 </footer>
-
-  </div>
-  </section>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=https://www.lvnt.be/>lvnt's basement</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
 </body>
 </html>

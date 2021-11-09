@@ -1,4 +1,29 @@
-baseURL: /
+baseURL: https://www.lvnt.be/
 languageCode: en-us
 title: lvnt's basement
 theme: "PaperMod"
+
+
+googleAnalytics: ''
+params:
+  name: Levent Bekdemir
+  altName: Levent
+  description: I used to be an adventurer like you..
+  bio: Blogger & Programmer
+  enableRSS: true
+  aboutAuthor: I'm a Programmer.
+  customJS: []
+  home: ''
+  subscribe: ''
+  olderPosts: ''
+  newerPosts: ''
+  copyright: ''
+  title404: ''
+  subtitle404: ''
+social:
+  email: lvntbkdmr@gmail.com
+  github: 'https://github.com/lvntbkdmr/'
+  linkedin: 'https://www.linkedin.com/in/leventbekdemir/'
+  hackerrank: 'https://www.hackerrank.com/lvntbkdmr/'
+taxonomies:
+  tag: tags

@@ -7,14 +7,7 @@ menu: "main"
 > I'm a lone coder in my daily life and a software engineer in my professional life
 
 ### Development Skills
-{{< tag go >}}
-{{< tag apple >}}
-{{< tag c >}}
-{{< tag cplusplus >}}
-{{< tag git >}}
-{{< tag linux >}}
-{{< tag ubuntu >}}
-{{< tag visualstudio >}}
+go, apple, c, cplusplus, git, linux, ubuntu, visualstudio
 
 ### [Language Proficiency](https://corporatefinanceinstitute.com/resources/careers/resume/language-proficiency-levels/)
 English - Professional Working Proficiency
