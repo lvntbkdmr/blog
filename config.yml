@@ -34,19 +34,6 @@ languages:
                   url: categories/
                   weight: 10
 
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        menu:
-            main:
-                - name: Tags
-                  url: tags
-                  weight: 10
-
 outputs:
     home:
         - HTML
@@ -88,13 +75,13 @@ params:
     homeInfoParams:
         Title: "lvnt's basement"
         Content: >
-            Welcome to the my baseline.
+            Welcome on board.
             
             - **Here** lies some of my Travel, DIY, and Games related sharings.
 
     socialIcons:
         - name: email
-          url: "lvntbkdmr@gmail.com"
+          url: "email:lvntbkdmr@gmail.com"
         - name: github
           url: "https://github.com/lvntbkdmr"
         - name: linkedin
