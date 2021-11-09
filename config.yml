@@ -86,15 +86,21 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "lvnt's basement"
         Content: >
             Welcome to the my baseline.
+            
             - **Here** lies some of my Travel, DIY, and Games related sharings.
+
     socialIcons:
+        - name: email
+          url: "lvntbkdmr@gmail.com"
         - name: github
           url: "https://github.com/lvntbkdmr"
         - name: linkedin
           url: "https://www.linkedin.com/in/leventbekdemir"
+        - name: hackerrank
+          url: "https://www.hackerrank.com/lvntbkdmr/"
         - name: RsS
           url: "index.xml"
 
