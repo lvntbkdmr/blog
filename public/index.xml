@@ -2,40 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>lvnt&#39;s basement</title>
-    <link>https://www.lvnt.be/</link>
+    <link>https://leventbekdemir.com/</link>
     <description>Recent content on lvnt&#39;s basement</description>
     <image>
-      <url>https://www.lvnt.be/papermod-cover.png</url>
-      <link>https://www.lvnt.be/papermod-cover.png</link>
+      <url>https://leventbekdemir.com/papermod-cover.png</url>
+      <link>https://leventbekdemir.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 10 Jun 2020 13:35:00 +0000</lastBuildDate><atom:link href="https://www.lvnt.be/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 07:47:49 +0000</lastBuildDate><atom:link href="https://leventbekdemir.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Voyage to Lilliput</title>
+      <link>https://leventbekdemir.com/posts/a-voyage-to-lilliput/</link>
+      <pubDate>Wed, 26 Jan 2022 07:47:49 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/a-voyage-to-lilliput/</guid>
+      <description>Gulliver&amp;#39;s TravelsIt would not be proper, for some reasons, to trouble the
+reader with the particulars of our adventures in those seas; let it suffice to
+inform him, that in our passage from thence to the East Indies, we were driven
+by a violent storm to the north-west of Van Diemen&amp;#39;s Land. Twelve of our crew
+were dead by immoderate labour and ill food; the rest were in a very weak
+condition. On the 5th of November, which was the beginning of summer in those
+parts, the weather being very hazy, t</description>
+    </item>
+    
+    <item>
+      <title>Export: 360 Degree Semantics</title>
+      <link>https://leventbekdemir.com/posts/export-360-degree-semantics/</link>
+      <pubDate>Sun, 23 Jan 2022 21:15:34 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/export-360-degree-semantics/</guid>
+      <description>Now for the fun part: Ulysses can output your writing to a host of standard
+formats, such as Plain and Rich Text, HTML, ePub, PDF and DOCX. It does so by
+translating your plain text input based on the definition of the minimal markup.
+If your brain starts to hurt, here’s a simple example…
+
+Let’s assume you want to emphasize a text passage. You select the word
+“emphasize” (do so), and mark it up as emphasis (tap the A| button and select
+Emphasis). Notice the extra characters that were entered aro</description>
+    </item>
+    
+    <item>
+      <title>deneme</title>
+      <link>https://leventbekdemir.com/posts/deneme/</link>
+      <pubDate>Sun, 23 Jan 2022 20:46:13 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/deneme/</guid>
+      <description>deneme</description>
+    </item>
+    
+    <item>
+      <title>iCloud and Ulysses on iPhone or Mac</title>
+      <link>https://leventbekdemir.com/posts/icloud-and-ulysses-on-iphone-or-mac/</link>
+      <pubDate>Sun, 23 Jan 2022 09:08:38 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/icloud-and-ulysses-on-iphone-or-mac/</guid>
+      <description>By default, your texts, along with all your groups and filters, will get stored
+in iCloud. This is great, because you can seamlessly switch between iPad, iPhone
+and Mac, since Ulysses works on all of them. Just visit the App Store or the Mac
+App Store, install Ulysses on your devices, and you’re good to go: Outline a
+short story on the subway, and work out the details at home on your Mac. So
+cool.
+
+As soon as you’re connected to the internet, sync will automatically start and
+keep your library u</description>
+    </item>
+    
+    <item>
+      <title>Start here for a quick overview of everything you need to know</title>
+      <link>https://leventbekdemir.com/posts/welcome/</link>
+      <pubDate>Sat, 22 Jan 2022 20:09:29 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/welcome/</guid>
+      <description>We&amp;#39;ve crammed the most important information to help you get started with Ghost into this one post. It&amp;#39;s your cheat-sheet to get started, and your shortcut to advanced features.</description>
+    </item>
+    
+    <item>
+      <title>Customizing your brand and design settings</title>
+      <link>https://leventbekdemir.com/posts/design/</link>
+      <pubDate>Sat, 22 Jan 2022 20:09:28 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/design/</guid>
+      <description>How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.</description>
+    </item>
+    
+    <item>
+      <title>Writing and managing content in Ghost, an advanced guide</title>
+      <link>https://leventbekdemir.com/posts/write/</link>
+      <pubDate>Sat, 22 Jan 2022 20:09:27 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/write/</guid>
+      <description>A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process.</description>
+    </item>
+    
+    <item>
+      <title>Building your audience with subscriber signups</title>
+      <link>https://leventbekdemir.com/posts/portal/</link>
+      <pubDate>Sat, 22 Jan 2022 20:09:26 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/portal/</guid>
+      <description>How Ghost allows you to turn anonymous readers into an audience of active subscribers, so you know what&amp;#39;s working and what isn&amp;#39;t.</description>
+    </item>
+    
+    <item>
+      <title>How to grow your business around an audience</title>
+      <link>https://leventbekdemir.com/posts/grow/</link>
+      <pubDate>Sat, 22 Jan 2022 20:09:24 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/grow/</guid>
+      <description>A guide to collaborating with other staff users to publish, and some resources to help you with the next steps of growing your business</description>
+    </item>
+    
+    <item>
+      <title>Setting up apps and custom integrations</title>
+      <link>https://leventbekdemir.com/posts/integrations/</link>
+      <pubDate>Sat, 22 Jan 2022 20:09:23 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/integrations/</guid>
+      <description>Work with all your favorite apps and tools or create your own custom integrations using the Ghost API.</description>
+    </item>
+    
     <item>
       <title>A New Hobby to Attach</title>
-      <link>https://www.lvnt.be/posts/a-new-hobby-to-attach/</link>
+      <link>https://leventbekdemir.com/posts/a-new-hobby-to-attach/</link>
       <pubDate>Wed, 10 Jun 2020 13:35:00 +0000</pubDate>
       
-      <guid>https://www.lvnt.be/posts/a-new-hobby-to-attach/</guid>
+      <guid>https://leventbekdemir.com/posts/a-new-hobby-to-attach/</guid>
       <description>These days I&amp;rsquo;ve been working on a DIY built-in bookcase on top of a cabinet for our home office which I share with my wife.
 Of course when you start a DIY project you first need to get a bunch of tools to be able to build stuff. Therefore, I started researching the minimal setup required for this type of job. Watched several youtube videos, read some very detailed blog posts etc.</description>
     </item>
     
     <item>
       <title>Portable Dev Env for C&#43;&#43;</title>
-      <link>https://www.lvnt.be/posts/portable-dev-env-for-c/</link>
+      <link>https://leventbekdemir.com/posts/portable-dev-env-for-c/</link>
       <pubDate>Fri, 28 Feb 2020 05:02:00 +0000</pubDate>
       
-      <guid>https://www.lvnt.be/posts/portable-dev-env-for-c/</guid>
+      <guid>https://leventbekdemir.com/posts/portable-dev-env-for-c/</guid>
       <description>A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :
  Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.</description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://www.lvnt.be/posts/hello-world/</link>
+      <link>https://leventbekdemir.com/posts/hello-world/</link>
       <pubDate>Mon, 17 Feb 2020 11:19:00 +0000</pubDate>
       
-      <guid>https://www.lvnt.be/posts/hello-world/</guid>
+      <guid>https://leventbekdemir.com/posts/hello-world/</guid>
       <description>Hello all,
 This is the traditional initial post for my blog.
 This blog is created by Hugo framework which is a static website builder. Furthermore, the files of this blog is open-source and hosted in my Github repo and deployed with Netlify.</description>
@@ -43,29 +154,29 @@ This blog is created by Hugo framework which is a static website builder. Furt
     
     <item>
       <title>Articles</title>
-      <link>https://www.lvnt.be/posts/articles/</link>
+      <link>https://leventbekdemir.com/posts/articles/</link>
       <pubDate>Sat, 01 Feb 2020 07:50:00 +0000</pubDate>
       
-      <guid>https://www.lvnt.be/posts/articles/</guid>
+      <guid>https://leventbekdemir.com/posts/articles/</guid>
       <description>[/posts/hello-world](Hello World) [/posts/my-hackintosh-journey](My Hackintosh Journey !) [/posts/portable-dev-env-for-c](Portable Dev Env for C++) [/posts/a-new-hobby-to-attach](A New Hobby to Attach)</description>
     </item>
     
     <item>
       <title>My Hackintosh Journey !</title>
-      <link>https://www.lvnt.be/posts/my-hackintosh-journey/</link>
+      <link>https://leventbekdemir.com/posts/my-hackintosh-journey/</link>
       <pubDate>Wed, 29 Jan 2020 13:15:00 +0000</pubDate>
       
-      <guid>https://www.lvnt.be/posts/my-hackintosh-journey/</guid>
+      <guid>https://leventbekdemir.com/posts/my-hackintosh-journey/</guid>
       <description>A hackintosh journey of me in order to join the elegant &amp;ldquo;just working&amp;rdquo; environment of Apple by a more budget-friendly way.
 The term &amp;ldquo;hackintosh&amp;rdquo; has been around since Apple has switched from PowerPC to Intel architecture around 2005. Ever since then, hackers try to integrate macOS/OS X software to be run on custom made platforms. There is a huge community behind this struggle such as tonymacx86, insanelymac and of course /r/hackintosh sub-reddit.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://www.lvnt.be/about/</link>
+      <link>https://leventbekdemir.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.lvnt.be/about/</guid>
+      <guid>https://leventbekdemir.com/about/</guid>
       <description>About Me  I&amp;rsquo;m a lone coder in my daily life and a software engineer in my professional life
  Development Skills go, apple, c, cplusplus, git, linux, ubuntu, visualstudio
 Language Proficiency English - Professional Working Proficiency
