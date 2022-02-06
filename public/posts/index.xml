@@ -9,7 +9,16 @@
       <link>https://leventbekdemir.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Jan 2022 07:47:49 +0000</lastBuildDate><atom:link href="https://leventbekdemir.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Feb 2022 17:41:31 +0000</lastBuildDate><atom:link href="https://leventbekdemir.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://leventbekdemir.com/posts/hello-world/</link>
+      <pubDate>Sun, 06 Feb 2022 17:41:31 +0000</pubDate>
+      
+      <guid>https://leventbekdemir.com/posts/hello-world/</guid>
+      <description>Hello world trial.</description>
+    </item>
+    
     <item>
       <title>A Voyage to Lilliput</title>
       <link>https://leventbekdemir.com/posts/a-voyage-to-lilliput/</link>
@@ -139,17 +148,6 @@ Of course when you start a DIY project you first need to get a bunch of tools to
       <guid>https://leventbekdemir.com/posts/portable-dev-env-for-c/</guid>
       <description>A cross-platform method to construct a development environment for developing C++ applications by using several tools such as :
  Eclipse (IDE) GNU GCC (Compiler) GNU Binutils (only for Linux) CMake (only for Windows) GNU GDB (Debugger with Python support) JDK (Java Runtime) Python (To run scripts and required by SCons) SCons (Build system) Boost (Advanced C++ libraries)  First of all create a folder named as devenv at any location.</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://leventbekdemir.com/posts/hello-world/</link>
-      <pubDate>Mon, 17 Feb 2020 11:19:00 +0000</pubDate>
-      
-      <guid>https://leventbekdemir.com/posts/hello-world/</guid>
-      <description>Hello all,
-This is the traditional initial post for my blog.
-This blog is created by Hugo framework which is a static website builder. Furthermore, the files of this blog is open-source and hosted in my Github repo and deployed with Netlify.</description>
     </item>
     
     <item>
