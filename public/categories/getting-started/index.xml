@@ -1,46 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on lvnt&#39;s basement</title>
-    <link>https://leventbekdemir.com/posts/</link>
-    <description>Recent content in Posts on lvnt&#39;s basement</description>
+    <title>Getting Started on lvnt&#39;s basement</title>
+    <link>https://leventbekdemir.com/categories/getting-started/</link>
+    <description>Recent content in Getting Started on lvnt&#39;s basement</description>
     <image>
       <url>https://leventbekdemir.com/papermod-cover.png</url>
       <link>https://leventbekdemir.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Jan 2022 07:47:49 +0000</lastBuildDate><atom:link href="https://leventbekdemir.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A Voyage to Lilliput</title>
-      <link>https://leventbekdemir.com/posts/a-voyage-to-lilliput/</link>
-      <pubDate>Wed, 26 Jan 2022 07:47:49 +0000</pubDate>
-      
-      <guid>https://leventbekdemir.com/posts/a-voyage-to-lilliput/</guid>
-      <description>Gulliver&amp;#39;s TravelsIt would not be proper, for some reasons, to trouble the
-reader with the particulars of our adventures in those seas; let it suffice to
-inform him, that in our passage from thence to the East Indies, we were driven
-by a violent storm to the north-west of Van Diemen&amp;#39;s Land. Twelve of our crew
-were dead by immoderate labour and ill food; the rest were in a very weak
-condition. On the 5th of November, which was the beginning of summer in those
-parts, the weather being very hazy, t</description>
-    </item>
-    
-    <item>
-      <title>Export: 360 Degree Semantics</title>
-      <link>https://leventbekdemir.com/posts/export-360-degree-semantics/</link>
-      <pubDate>Sun, 23 Jan 2022 21:15:34 +0000</pubDate>
-      
-      <guid>https://leventbekdemir.com/posts/export-360-degree-semantics/</guid>
-      <description>Now for the fun part: Ulysses can output your writing to a host of standard
-formats, such as Plain and Rich Text, HTML, ePub, PDF and DOCX. It does so by
-translating your plain text input based on the definition of the minimal markup.
-If your brain starts to hurt, here’s a simple example…
-
-Let’s assume you want to emphasize a text passage. You select the word
-“emphasize” (do so), and mark it up as emphasis (tap the A| button and select
-Emphasis). Notice the extra characters that were entered aro</description>
-    </item>
-    
+    <lastBuildDate>Sun, 23 Jan 2022 09:08:38 +0000</lastBuildDate><atom:link href="https://leventbekdemir.com/categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iCloud and Ulysses on iPhone or Mac</title>
       <link>https://leventbekdemir.com/posts/icloud-and-ulysses-on-iphone-or-mac/</link>

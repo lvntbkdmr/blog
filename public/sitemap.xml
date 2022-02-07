@@ -2,33 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.lvnt.be/posts/a-new-hobby-to-attach/</loc>
-    <lastmod>2020-06-10T13:35:00+00:00</lastmod>
+    <loc>https://leventbekdemir.com/posts/a-voyage-to-lilliput/</loc>
+    <lastmod>2022-01-26T07:47:49+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/</loc>
-    <lastmod>2020-06-10T13:35:00+00:00</lastmod>
+    <loc>https://leventbekdemir.com/</loc>
+    <lastmod>2022-02-06T18:15:25+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/posts/</loc>
-    <lastmod>2020-06-10T13:35:00+00:00</lastmod>
+    <loc>https://leventbekdemir.com/posts/</loc>
+    <lastmod>2022-02-06T18:15:25+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/posts/portable-dev-env-for-c/</loc>
-    <lastmod>2020-02-28T05:02:00+00:00</lastmod>
+    <loc>https://leventbekdemir.com/posts/export-360-degree-semantics/</loc>
+    <lastmod>2022-01-23T21:15:34+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/posts/hello-world/</loc>
-    <lastmod>2020-02-17T11:19:00+00:00</lastmod>
+    <loc>https://leventbekdemir.com/categories/</loc>
+    <lastmod>2022-02-06T18:15:25+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/posts/articles/</loc>
-    <lastmod>2020-02-01T07:50:00+00:00</lastmod>
+    <loc>https://leventbekdemir.com/categories/getting-started/</loc>
+    <lastmod>2022-02-06T18:15:25+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/posts/my-hackintosh-journey/</loc>
-    <lastmod>2020-01-29T13:15:00+00:00</lastmod>
+    <loc>https://leventbekdemir.com/posts/icloud-and-ulysses-on-iphone-or-mac/</loc>
+    <lastmod>2022-01-25T18:04:52+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/about/</loc>
+    <loc>https://leventbekdemir.com/posts/welcome/</loc>
+    <lastmod>2022-01-22T20:09:25+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/categories/</loc>
+    <loc>https://leventbekdemir.com/posts/design/</loc>
+    <lastmod>2022-01-22T20:09:25+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/series/</loc>
+    <loc>https://leventbekdemir.com/posts/write/</loc>
+    <lastmod>2022-01-22T20:09:25+00:00</lastmod>
   </url><url>
-    <loc>https://www.lvnt.be/tags/</loc>
+    <loc>https://leventbekdemir.com/posts/portal/</loc>
+    <lastmod>2022-01-22T20:09:24+00:00</lastmod>
+  </url><url>
+    <loc>https://leventbekdemir.com/posts/grow/</loc>
+    <lastmod>2022-01-22T20:09:24+00:00</lastmod>
+  </url><url>
+    <loc>https://leventbekdemir.com/posts/integrations/</loc>
+    <lastmod>2022-02-06T18:15:25+00:00</lastmod>
+  </url><url>
+    <loc>https://leventbekdemir.com/about/</loc>
+  </url><url>
+    <loc>https://leventbekdemir.com/series/</loc>
+  </url><url>
+    <loc>https://leventbekdemir.com/tags/</loc>
   </url>
 </urlset>
