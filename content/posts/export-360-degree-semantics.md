@@ -65,4 +65,32 @@ cover:
   relative: false
 
 ---
-<p>Now for the fun part: Ulysses can output your writing to a host of standard formats, such as Plain and Rich Text, HTML, ePub, PDF and DOCX. It does so by translating your <em>plain text input</em> based on the definition of the minimal markup. If your brain starts to hurt, here’s a simple example…</p><p>Let’s assume you want to emphasize a text passage. You select the word “emphasize” (do so), and mark it up as emphasis (tap the <code>A|</code> button and select Emphasis). Notice the extra characters that were entered around the word.</p><p>You have just told Ulysses, in its own “plain text language”, that this passage should be an emphasized passage. Now Ulysses knows and will never forget. So, when you export your text to, say, a PDF, Ulysses will translate this emphasized passage into what a PDF will understand and display – in this case, it will format your emphasized passage as italicized text.</p><p>Give it a try:</p><ul><li>Dismiss the keyboard (bottom right of keyboard)</li><li>Open the editor menu (circled ellipsis) and select Export.</li><li>In the view that just slid up, select PDF.</li><li>The “emphasize” above should be set in italics.</li></ul><h2 id="headlines-such-as-this-will-get-a-larger-font">Headlines Such as This Will Get a Larger Font</h2><p>If you export to HTML instead, Ulysses will translate the emphasized passage to semantically correct <code>&lt;em&gt;</code>, and the headline will be tagged with <code>&lt;h2&gt;</code>.</p><p>And so on.</p><p>The beauty of this should be obvious by now: Instead of worrying about how your output <em>looks</em>, you can concentrate on what your content is <em>supposed to mean</em>. This may be frightening at first, but trust us, it’s not.</p><p>It’s awesome.</p><h3 id="share-your-work">Share Your Work</h3><p>You can send a PDF via email or save it to iCloud. You can open a DOCX file in Microsoft Word or Pages. You can publish your text as blog post to WordPress, Ghost, Micro.blog or Medium.</p><p>In the exporter, tap the Share icon to list all available options. They will differ depending on the chosen output and the apps installed on your iPad.</p>
+Now for the fun part: Ulysses can output your writing to a host of standard formats, such as Plain and Rich Text, HTML, ePub, PDF and DOCX. It does so by translating your _plain text input_ based on the definition of the minimal markup. If your brain starts to hurt, here’s a simple example…
+
+Let’s assume you want to emphasize a text passage. You select the word “emphasize” (do so), and mark it up as emphasis (tap the `A|` button and select Emphasis). Notice the extra characters that were entered around the word.
+
+You have just told Ulysses, in its own “plain text language”, that this passage should be an emphasized passage. Now Ulysses knows and will never forget. So, when you export your text to, say, a PDF, Ulysses will translate this emphasized passage into what a PDF will understand and display – in this case, it will format your emphasized passage as italicized text.
+
+Give it a try:
+
+*   Dismiss the keyboard (bottom right of keyboard)
+*   Open the editor menu (circled ellipsis) and select Export.
+*   In the view that just slid up, select PDF.
+*   The “emphasize” above should be set in italics.
+
+Headlines Such as This Will Get a Larger Font
+---------------------------------------------
+
+If you export to HTML instead, Ulysses will translate the emphasized passage to semantically correct `<em>`, and the headline will be tagged with `<h2>`.
+
+And so on.
+
+The beauty of this should be obvious by now: Instead of worrying about how your output _looks_, you can concentrate on what your content is _supposed to mean_. This may be frightening at first, but trust us, it’s not.
+
+It’s awesome.
+
+### Share Your Work
+
+You can send a PDF via email or save it to iCloud. You can open a DOCX file in Microsoft Word or Pages. You can publish your text as blog post to WordPress, Ghost, Micro.blog or Medium.
+
+In the exporter, tap the Share icon to list all available options. They will differ depending on the chosen output and the apps installed on your iPad.

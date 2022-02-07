@@ -75,4 +75,16 @@ cover:
   relative: false
 
 ---
-<p>By default, your texts, along with all your groups and filters, will get stored in iCloud. This is great, because you can seamlessly switch between iPad, iPhone and Mac, since Ulysses works on all of them. Just visit the App Store or the Mac App Store, install Ulysses on your devices, and you’re good to go: Outline a short story on the subway, and work out the details at home on your Mac. So cool.</p><p>As soon as you’re connected to the internet, sync will automatically start and keep your library up-to-date on all your devices. There’s nothing to do, no setup necessary, no button to press, nothing. Nothing.</p><h3 id="icloud-vs-on-my-ipad">iCloud vs. On My iPad</h3><p>Of course, you can also decide to store locally, or freely move your texts from the cloud to local storage only and vice versa.</p><hr><p>So much for the moment. You should now know enough to get around – so start out, write something, settle in.</p><p>Head back to the introduction for a primer on Markdown XL, how to make use of Ulysses’ advanced features, as well as tips, tricks and handy shortcuts.</p>
+By default, your texts, along with all your groups and filters, will get stored in iCloud. This is great, because you can seamlessly switch between iPad, iPhone and Mac, since Ulysses works on all of them. Just visit the App Store or the Mac App Store, install Ulysses on your devices, and you’re good to go: Outline a short story on the subway, and work out the details at home on your Mac. So cool.
+
+As soon as you’re connected to the internet, sync will automatically start and keep your library up-to-date on all your devices. There’s nothing to do, no setup necessary, no button to press, nothing. Nothing.
+
+### iCloud vs. On My iPad
+
+Of course, you can also decide to store locally, or freely move your texts from the cloud to local storage only and vice versa.
+
+* * *
+
+So much for the moment. You should now know enough to get around – so start out, write something, settle in.
+
+Head back to the introduction for a primer on Markdown XL, how to make use of Ulysses’ advanced features, as well as tips, tricks and handy shortcuts.

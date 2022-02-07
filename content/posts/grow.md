@@ -39,4 +39,36 @@ cover:
   relative: false
 
 ---
-<p>As you grow, you'll probably want to start inviting team members and collaborators to your site. Ghost has a number of different user roles for your team:</p><p><strong>Contributors</strong><br>This is the base user level in Ghost. Contributors can create and edit their own draft posts, but they are unable to edit drafts of others or publish posts. Contributors are <strong>untrusted</strong> users with the most basic access to your publication.</p><p><strong>Authors</strong><br>Authors are the 2nd user level in Ghost. Authors can write, edit and publish their own posts. Authors are <strong>trusted</strong> users. If you don't trust users to be allowed to publish their own posts, they should be set as Contributors.</p><p><strong>Editors</strong><br>Editors are the 3rd user level in Ghost. Editors can do everything that an Author can do, but they can also edit and publish the posts of others - as well as their own. Editors can also invite new Contributors &amp; Authors to the site.</p><p><strong>Administrators</strong><br>The top user level in Ghost is Administrator. Again, administrators can do everything that Authors and Editors can do, but they can also edit all site settings and data, not just content. Additionally, administrators have full access to invite, manage or remove any other user of the site.<br><br><strong>The Owner</strong><br>There is only ever one owner of a Ghost site. The owner is a special user which has all the same permissions as an Administrator, but with two exceptions: The Owner can never be deleted. And in some circumstances the owner will have access to additional special settings if applicable. For example: billing details, if using <a href="https://ghost.org/pricing/"><strong>Ghost(Pro)</strong></a>.</p><blockquote><em>Ask all of your users to fill out their user profiles, including bio and social links. These will populate rich structured data for posts and generally create more opportunities for themes to fully populate their design.</em></blockquote><hr><p>If you're looking for insights, tips and reference materials to expand your content business, here's 5 top resources to get you started:</p><ul><li><a href="https://ghost.org/blog/how-to-create-a-newsletter/"><strong>How to create a premium newsletter (+ some case studies)</strong></a><strong> </strong> <br>Learn how others run successful paid email newsletter products</li><li><strong><a href="https://ghost.org/blog/membership-sites/">The ultimate guide to membership websites for creators</a></strong><br>Tips to help you build, launch and grow your new membership business</li><li><strong><a href="https://newsletterguide.org/">The Newsletter Guide</a></strong><br>A 201 guide for taking your newsletters to the next level</li><li><a href="https://ghost.org/blog/find-your-niche-creator-economy/"><strong>The proven way to find your niche, explained</strong></a><br>Find the overlap and find a monetizable niche that gets noticed</li><li><strong><a href="https://ghost.org/blog/newsletter-referral-programs/">Should you launch a referral program? </a></strong><br>Strategies for building a sustainable referral growth machine</li></ul>
+As you grow, you'll probably want to start inviting team members and collaborators to your site. Ghost has a number of different user roles for your team:
+
+**Contributors**  
+This is the base user level in Ghost. Contributors can create and edit their own draft posts, but they are unable to edit drafts of others or publish posts. Contributors are **untrusted** users with the most basic access to your publication.
+
+**Authors**  
+Authors are the 2nd user level in Ghost. Authors can write, edit and publish their own posts. Authors are **trusted** users. If you don't trust users to be allowed to publish their own posts, they should be set as Contributors.
+
+**Editors**  
+Editors are the 3rd user level in Ghost. Editors can do everything that an Author can do, but they can also edit and publish the posts of others - as well as their own. Editors can also invite new Contributors & Authors to the site.
+
+**Administrators**  
+The top user level in Ghost is Administrator. Again, administrators can do everything that Authors and Editors can do, but they can also edit all site settings and data, not just content. Additionally, administrators have full access to invite, manage or remove any other user of the site.  
+  
+**The Owner**  
+There is only ever one owner of a Ghost site. The owner is a special user which has all the same permissions as an Administrator, but with two exceptions: The Owner can never be deleted. And in some circumstances the owner will have access to additional special settings if applicable. For example: billing details, if using [**Ghost(Pro)**](https://ghost.org/pricing/).
+
+> _Ask all of your users to fill out their user profiles, including bio and social links. These will populate rich structured data for posts and generally create more opportunities for themes to fully populate their design._
+
+* * *
+
+If you're looking for insights, tips and reference materials to expand your content business, here's 5 top resources to get you started:
+
+*   [**How to create a premium newsletter (+ some case studies)**](https://ghost.org/blog/how-to-create-a-newsletter/)  
+    Learn how others run successful paid email newsletter products
+*   **[The ultimate guide to membership websites for creators](https://ghost.org/blog/membership-sites/)**  
+    Tips to help you build, launch and grow your new membership business
+*   **[The Newsletter Guide](https://newsletterguide.org/)**  
+    A 201 guide for taking your newsletters to the next level
+*   [**The proven way to find your niche, explained**](https://ghost.org/blog/find-your-niche-creator-economy/)  
+    Find the overlap and find a monetizable niche that gets noticed
+*   **[Should you launch a referral program?](https://ghost.org/blog/newsletter-referral-programs/)**  
+    Strategies for building a sustainable referral growth machine
