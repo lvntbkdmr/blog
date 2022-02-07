@@ -72,14 +72,5 @@ keep your library u</description>
       <description>A guide to collaborating with other staff users to publish, and some resources to help you with the next steps of growing your business</description>
     </item>
     
-    <item>
-      <title>Setting up apps and custom integrations</title>
-      <link>https://leventbekdemir.com/posts/integrations/</link>
-      <pubDate>Sat, 22 Jan 2022 20:09:23 +0000</pubDate>
-      
-      <guid>https://leventbekdemir.com/posts/integrations/</guid>
-      <description>Work with all your favorite apps and tools or create your own custom integrations using the Ghost API.</description>
-    </item>
-    
   </channel>
 </rss>
