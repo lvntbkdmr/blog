@@ -2,24 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://leventbekdemir.com/categories/</loc>
-    <lastmod>2022-01-22T20:09:24+00:00</lastmod>
-  </url><url>
-    <loc>https://leventbekdemir.com/categories/getting-started/</loc>
-    <lastmod>2022-01-22T20:09:24+00:00</lastmod>
-  </url><url>
-    <loc>https://leventbekdemir.com/posts/grow/</loc>
-    <lastmod>2022-01-22T20:09:24+00:00</lastmod>
-  </url><url>
-    <loc>https://leventbekdemir.com/</loc>
-    <lastmod>2022-01-22T20:09:24+00:00</lastmod>
-  </url><url>
-    <loc>https://leventbekdemir.com/posts/</loc>
-    <lastmod>2022-01-22T20:09:24+00:00</lastmod>
-  </url><url>
     <loc>https://leventbekdemir.com/about/</loc>
   </url><url>
     <loc>https://leventbekdemir.com/archives/</loc>
+  </url><url>
+    <loc>https://leventbekdemir.com/categories/</loc>
+  </url><url>
+    <loc>https://leventbekdemir.com/</loc>
   </url><url>
     <loc>https://leventbekdemir.com/search/</loc>
   </url><url>
